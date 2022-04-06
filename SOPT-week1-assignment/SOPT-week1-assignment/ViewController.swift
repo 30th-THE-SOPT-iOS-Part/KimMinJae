@@ -11,10 +11,27 @@ class ViewController: UIViewController {
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
     
+    var isIdTexted = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginButton.isEnabled = false
+        signInButton.sizeToFit()
+    }
+    
+    @IBAction func textedId(_ sender: UITextField) {
+        print("texted ID ")
+        isIdTexted = true
+    }
+    
+    @IBAction func textedPw(_ sender: Any) {
+        if isIdTexted {
+            loginButton.isEnabled = true
+            loginButton.backgroundColor = .systemBlue
+        }
     }
     
     
