@@ -14,23 +14,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
     
-    var isIdTexted = false
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.isEnabled = false
         signInButton.sizeToFit()
     }
     
-    @IBAction func textedId(_ sender: UITextField) {
-        print("texted ID ")
-        isIdTexted = true
-    }
-    
-    @IBAction func textedPw(_ sender: Any) {
-        if isIdTexted {
+    @IBAction func textedIdAndPw(_ sender: UITextField) {
+        if idTextField.hasText && pwTextField.hasText {
             loginButton.isEnabled = true
             loginButton.backgroundColor = .systemBlue
+        } else {
+            loginButton.isEnabled = false
+            loginButton.backgroundColor = UIColor(displayP3Red: 107/255, green: 203/255, blue: 252/255, alpha: 1)
         }
     }
     
