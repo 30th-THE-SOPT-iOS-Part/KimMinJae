@@ -16,18 +16,15 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setName()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func goBackMain(_ sender: Any) {
-        
         self.dismiss(animated: true)
-        
     }
     
     private func setName() {
         if let userName = userName {
-            welcomeLabel.text = userName + "님이 Instagram에 오신 것을 환영합니다"
+            welcomeLabel.text = userName + "님, Instagram에 오신 것을 환영합니다"
             welcomeLabel.sizeToFit()
         }
     }

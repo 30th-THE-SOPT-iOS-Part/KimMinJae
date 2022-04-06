@@ -16,8 +16,6 @@ class MakeNameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setDescriptionLabel()
-
-        // Do any additional setup after loading the view.
     }
     
 

@@ -14,7 +14,6 @@ class MakePwViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setDescriptionLabel()
-        // Do any additional setup after loading the view.
     }
     
     @IBOutlet weak var descriptionLabel: UILabel!
