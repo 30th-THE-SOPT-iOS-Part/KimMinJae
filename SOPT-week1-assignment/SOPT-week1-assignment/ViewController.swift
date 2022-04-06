@@ -53,6 +53,8 @@ class ViewController: UIViewController {
         self.present(WelcomeVC, animated: true, completion: nil)
         
         idTextField.text = ""
+        pwTextField.text = ""
+        loginButton.backgroundColor = UIColor(displayP3Red: 107/255, green: 203/255, blue: 252/255, alpha: 1)
     }
 }
 
