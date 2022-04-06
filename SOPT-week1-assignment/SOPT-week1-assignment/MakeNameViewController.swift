@@ -12,13 +12,26 @@ class MakeNameViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     
     @IBOutlet weak var NameVCdescriptionLabel: UILabel!
+    @IBOutlet weak var nameNextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setDescriptionLabel()
+        nameNextButton.isEnabled = false
     }
     
 
+    @IBAction func textedName(_ sender: Any) {
+        if userNameTextField.hasText {
+            nameNextButton.isEnabled = true
+            nameNextButton.backgroundColor = .systemBlue
+        } else {
+            nameNextButton.isEnabled = false
+            nameNextButton.backgroundColor = UIColor(displayP3Red: 107/255, green: 203/255, blue: 252/255, alpha: 1)
+        }
+        
+    }
+    
     @IBAction func goToMakePwVC(_ sender: Any) {
         guard let MakePwVC = self.storyboard?.instantiateViewController(withIdentifier: "MakePwViewController") as? MakePwViewController else {
             return
