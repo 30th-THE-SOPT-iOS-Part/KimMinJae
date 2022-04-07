@@ -11,8 +11,11 @@ class MakePwViewController: UIViewController {
     
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var pwNextButton: UIButton!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var pwVCEyeButton: UIButton!
     
     var userNameInPwVC: String?
+    var isShowingPWinPwVC = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +23,8 @@ class MakePwViewController: UIViewController {
         pwNextButton.isEnabled = false
     }
     
-    @IBOutlet weak var descriptionLabel: UILabel!
     
-    @IBAction func textedPw(_ sender: Any) {
+    @IBAction func textedPw(_ sender: UITextField) {
         if pwTextField.hasText {
             pwNextButton.isEnabled = true
             pwNextButton.backgroundColor = .systemBlue
@@ -32,7 +34,7 @@ class MakePwViewController: UIViewController {
         }
     }
     
-    @IBAction func goToWelcomeVC(_ sender: Any) {
+    @IBAction func goToWelcomeVC(_ sender: UIButton) {
         guard let WelcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {
             return
         }
@@ -45,6 +47,18 @@ class MakePwViewController: UIViewController {
         // Modal - Present method
         self.present(WelcomeVC, animated: true) {
             self.navigationController?.popToRootViewController(animated: false)
+        }
+    }
+    
+    @IBAction func toggleEyeButtonInPwVC(_ sender: UIButton) {
+        if !isShowingPWinPwVC {
+            pwVCEyeButton.setImage(UIImage(named: "ShownEye"), for: .normal)
+            pwTextField.isSecureTextEntry = false
+            isShowingPWinPwVC = true
+        } else {
+            pwVCEyeButton.setImage(UIImage(named: "HiddenEye"), for: .normal)
+            pwTextField.isSecureTextEntry = true
+            isShowingPWinPwVC = false
         }
     }
     

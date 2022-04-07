@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var eyeButton: UIButton!
+    
+    var isShowingPW = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +42,7 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(MakeNameVC, animated: true)
     }
     
-    @IBAction func goToWelcomeVC(_ sender: Any) {
+    @IBAction func goToWelcomeVC(_ sender: UIButton) {
         
         guard let WelcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {
             return
@@ -55,6 +58,20 @@ class ViewController: UIViewController {
         idTextField.text = ""
         pwTextField.text = ""
         loginButton.backgroundColor = UIColor(displayP3Red: 107/255, green: 203/255, blue: 252/255, alpha: 1)
+    }
+    
+    
+    @IBAction func toggleEyeButton(_ sender: UIButton) {
+        if !isShowingPW {
+            eyeButton.setImage(UIImage(named: "ShownEye"), for: .normal)
+            pwTextField.isSecureTextEntry = false
+            isShowingPW = true
+        } else {
+            eyeButton.setImage(UIImage(named: "HiddenEye"), for: .normal)
+            pwTextField.isSecureTextEntry = true
+            isShowingPW = false
+        }
+        
     }
 }
 
