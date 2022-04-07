@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loginButton.isEnabled = false
         signInButton.sizeToFit()
+        makeBackButton()
     }
     
     @IBAction func textedIdAndPw(_ sender: UITextField) {
@@ -75,3 +76,11 @@ class ViewController: UIViewController {
     }
 }
 
+extension UIViewController {
+    func makeBackButton() {
+        let backImage = UIImage(named: "BackArrow")
+        self.navigationController?.navigationBar.backIndicatorImage = backImage
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
+        self.navigationItem.backButtonTitle = ""
+    }
+}

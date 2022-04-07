@@ -317,7 +317,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U0x-XI-Ttb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VrI-rn-pgp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="BackArrow" backIndicatorTransitionMaskImage="BackArrow" id="VrI-rn-pgp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -332,6 +332,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BackArrow" width="24.5" height="24"/>
         <image name="HiddenEye" width="20" height="20"/>
         <image name="Logo" width="175" height="50"/>
         <systemColor name="systemBackgroundColor">

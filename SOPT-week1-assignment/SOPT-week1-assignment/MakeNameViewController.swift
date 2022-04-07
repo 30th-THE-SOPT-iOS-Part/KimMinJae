@@ -18,6 +18,7 @@ class MakeNameViewController: UIViewController {
         super.viewDidLoad()
         setDescriptionLabel()
         nameNextButton.isEnabled = false
+        makeBackButton()
     }
     
 
