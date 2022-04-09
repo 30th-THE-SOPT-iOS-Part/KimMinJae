@@ -15,7 +15,6 @@ class MakePwViewController: UIViewController {
     @IBOutlet weak var pwVCEyeButton: UIButton!
     
     var userNameInPwVC: String?
-    var isShowingPWinPwVC = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,16 +49,13 @@ class MakePwViewController: UIViewController {
         }
     }
     
-    @IBAction func toggleEyeButtonInPwVC(_ sender: UIButton) {
-        if !isShowingPWinPwVC {
+    @IBAction func toggleEyeBtn(_ sender: UIButton) {
+        if pwTextField.isSecureTextEntry {
             pwVCEyeButton.setImage(UIImage(named: "ShownEye"), for: .normal)
-            pwTextField.isSecureTextEntry = false
-            isShowingPWinPwVC = true
         } else {
             pwVCEyeButton.setImage(UIImage(named: "HiddenEye"), for: .normal)
-            pwTextField.isSecureTextEntry = true
-            isShowingPWinPwVC = false
         }
+        pwTextField.isSecureTextEntry.toggle()
     }
     
     private func setDescriptionLabel() {

@@ -20,7 +20,7 @@
                                 <rect key="frame" x="87" y="203" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N27-HF-IOp">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N27-HF-IOp">
                                 <rect key="frame" x="37" y="403" width="340" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -178,7 +178,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="NameVCdescriptionLabel" destination="3KU-nK-2dY" id="mnx-t3-RNh"/>
+                        <outlet property="nameDescriptionLabel" destination="3KU-nK-2dY" id="mnx-t3-RNh"/>
                         <outlet property="nameNextButton" destination="BID-eB-Ljm" id="57n-Nh-YI7"/>
                         <outlet property="userNameTextField" destination="BGW-oT-bha" id="qEq-Ii-huM"/>
                     </connections>

@@ -15,23 +15,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var eyeButton: UIButton!
     
-    var isShowingPW = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginButton.isEnabled = false
-        signInButton.sizeToFit()
+        initializeButton()
         makeBackButton()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        // 처음화면으로 돌아왔을때 초기화 위한 부분
+        super.viewWillAppear(true)
+        idTextField.text = ""
+        pwTextField.text = ""
+        loginButton.backgroundColor = UIColor(displayP3Red: 107/255, green: 203/255, blue: 252/255, alpha: 1)
+    }
+    
     @IBAction func textedIdAndPw(_ sender: UITextField) {
-        if idTextField.hasText && pwTextField.hasText {
-            loginButton.isEnabled = true
-            loginButton.backgroundColor = .systemBlue
-        } else {
-            loginButton.isEnabled = false
-            loginButton.backgroundColor = UIColor(displayP3Red: 107/255, green: 203/255, blue: 252/255, alpha: 1)
-        }
+        // 삼항 연산자 활용
+        loginButton.isEnabled = idTextField.hasText && pwTextField.hasText
+        loginButton.backgroundColor = idTextField.hasText && pwTextField.hasText ? .systemBlue : UIColor(displayP3Red: 107/255, green: 203/255, blue: 252/255, alpha: 1)
+        
+//        if idTextField.hasText && pwTextField.hasText {
+//            loginButton.isEnabled = true
+//            loginButton.backgroundColor = .systemBlue
+//        } else {
+//            loginButton.isEnabled = false
+//            loginButton.backgroundColor = UIColor(displayP3Red: 107/255, green: 203/255, blue: 252/255, alpha: 1)
+//        }
     }
     
     
@@ -56,23 +66,21 @@ class ViewController: UIViewController {
         
         self.present(WelcomeVC, animated: true, completion: nil)
         
-        idTextField.text = ""
-        pwTextField.text = ""
-        loginButton.backgroundColor = UIColor(displayP3Red: 107/255, green: 203/255, blue: 252/255, alpha: 1)
     }
     
     
     @IBAction func toggleEyeButton(_ sender: UIButton) {
-        if !isShowingPW {
+        if pwTextField.isSecureTextEntry {
             eyeButton.setImage(UIImage(named: "ShownEye"), for: .normal)
-            pwTextField.isSecureTextEntry = false
-            isShowingPW = true
         } else {
             eyeButton.setImage(UIImage(named: "HiddenEye"), for: .normal)
-            pwTextField.isSecureTextEntry = true
-            isShowingPW = false
         }
-        
+        pwTextField.isSecureTextEntry = !pwTextField.isSecureTextEntry
+    }
+    
+    private func initializeButton() {
+        loginButton.isEnabled = false
+        signInButton.sizeToFit()
     }
 }
 
