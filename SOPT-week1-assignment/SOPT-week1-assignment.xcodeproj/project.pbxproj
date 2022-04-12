@@ -16,6 +16,7 @@
 		B557830027FAFB0800C20DF0 /* MakeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55782FF27FAFB0800C20DF0 /* MakeNameViewController.swift */; };
 		B557830227FAFBCA00C20DF0 /* MakePwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557830127FAFBCA00C20DF0 /* MakePwViewController.swift */; };
 		B557830427FAFBD600C20DF0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557830327FAFBD600C20DF0 /* WelcomeViewController.swift */; };
+		B5EF3C0A28058BFA0099F84B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF3C0928058BFA0099F84B /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B55782FF27FAFB0800C20DF0 /* MakeNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNameViewController.swift; sourceTree = "<group>"; };
 		B557830127FAFBCA00C20DF0 /* MakePwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePwViewController.swift; sourceTree = "<group>"; };
 		B557830327FAFBD600C20DF0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B5EF3C0928058BFA0099F84B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				B55782FF27FAFB0800C20DF0 /* MakeNameViewController.swift */,
 				B557830127FAFBCA00C20DF0 /* MakePwViewController.swift */,
 				B557830327FAFBD600C20DF0 /* WelcomeViewController.swift */,
+				B5EF3C0928058BFA0099F84B /* Extension.swift */,
 			);
 			path = "SOPT-week1-assignment";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				B55782F027FAF38E00C20DF0 /* ViewController.swift in Sources */,
 				B557830027FAFB0800C20DF0 /* MakeNameViewController.swift in Sources */,
+				B5EF3C0A28058BFA0099F84B /* Extension.swift in Sources */,
 				B55782EC27FAF38E00C20DF0 /* AppDelegate.swift in Sources */,
 				B557830427FAFBD600C20DF0 /* WelcomeViewController.swift in Sources */,
 				B55782EE27FAF38E00C20DF0 /* SceneDelegate.swift in Sources */,
