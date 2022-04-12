@@ -12,14 +12,13 @@ class MakePwViewController: UIViewController {
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var pwNextButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var pwVCEyeButton: UIButton!
     
     var userNameInPwVC: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setDescriptionLabel()
-        pwNextButton.isEnabled = false
+        initializeUI()
     }
     
     
@@ -49,13 +48,10 @@ class MakePwViewController: UIViewController {
         }
     }
     
-    @IBAction func toggleEyeBtn(_ sender: UIButton) {
-        if pwTextField.isSecureTextEntry {
-            pwVCEyeButton.setImage(UIImage(named: "ShownEye"), for: .normal)
-        } else {
-            pwVCEyeButton.setImage(UIImage(named: "HiddenEye"), for: .normal)
-        }
-        pwTextField.isSecureTextEntry.toggle()
+    private func initializeUI() {
+        pwNextButton.isEnabled = false
+        pwTextField.setIcon(icon: UIImage(named: "ShownEye")!)
+        
     }
     
     private func setDescriptionLabel() {

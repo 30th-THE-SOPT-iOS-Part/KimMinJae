@@ -40,28 +40,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yiu-YB-w7X">
                                         <rect key="frame" x="0.0" y="106" width="382" height="17"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="비밀번호를">
-                                                <attributes>
-                                                    <color key="NSColor" systemColor="systemBlueColor"/>
-                                                    <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content=" ">
-                                                <attributes>
-                                                    <color key="NSColor" systemColor="systemBlueColor"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content="잊으셨나요">
-                                                <attributes>
-                                                    <color key="NSColor" systemColor="systemBlueColor"/>
-                                                    <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content="?">
+                                            <fragment content="비밀번호를 잊으셨나요?">
                                                 <attributes>
                                                     <color key="NSColor" systemColor="systemBlueColor"/>
                                                     <font key="NSFont" metaFont="system" size="14"/>
@@ -270,15 +249,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hi-7o-UWT">
-                                <rect key="frame" x="322" y="245" width="44" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="HiddenEye"/>
-                                <connections>
-                                    <action selector="toggleEyeButtonInPwVC:" destination="4NF-S7-DVi" eventType="touchUpInside" id="bE1-g5-KCd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qNi-cA-CJM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -287,7 +257,6 @@
                         <outlet property="descriptionLabel" destination="XDF-h9-ZVw" id="ALd-l3-V38"/>
                         <outlet property="pwNextButton" destination="8Hn-5u-IrX" id="Y5o-kT-ff5"/>
                         <outlet property="pwTextField" destination="d7k-hr-Rml" id="iME-ug-zvu"/>
-                        <outlet property="pwVCEyeButton" destination="2hi-7o-UWT" id="Z4R-XK-p1h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y1a-Qf-gpC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -364,7 +333,6 @@
     </scenes>
     <resources>
         <image name="BackArrow" width="24.5" height="24"/>
-        <image name="HiddenEye" width="20" height="20"/>
         <image name="Logo" width="175" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
