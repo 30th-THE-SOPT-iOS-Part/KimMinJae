@@ -9,6 +9,7 @@ import UIKit
 
 class MakeNameViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var nameDescriptionLabel: UILabel!
     @IBOutlet weak var nameNextButton: UIButton!
@@ -22,6 +23,7 @@ class MakeNameViewController: UIViewController {
     
 
     @IBAction func textedName(_ sender: Any) {
+        
         if userNameTextField.hasText {
             nameNextButton.isEnabled = true
             nameNextButton.backgroundColor = .systemBlue

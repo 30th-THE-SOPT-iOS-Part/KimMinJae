@@ -45,6 +45,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B527D1902806D0EF009F3A4B /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		B527D1912806D105009F3A4B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		B55782DF27FAF38E00C20DF0 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +78,8 @@
 		B55782EA27FAF38E00C20DF0 /* SOPT-week1-assignment */ = {
 			isa = PBXGroup;
 			children = (
+				B527D1902806D0EF009F3A4B /* Global */,
+				B527D1912806D105009F3A4B /* Screen */,
 				B55782EB27FAF38E00C20DF0 /* AppDelegate.swift */,
 				B55782ED27FAF38E00C20DF0 /* SceneDelegate.swift */,
 				B55782EF27FAF38E00C20DF0 /* ViewController.swift */,

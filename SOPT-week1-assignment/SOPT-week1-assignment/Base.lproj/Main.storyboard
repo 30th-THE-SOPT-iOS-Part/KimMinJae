@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U0x-XI-Ttb">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,23 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_week1_assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ViewController" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fcf-OS-aGM">
-                                <rect key="frame" x="100" y="254" width="214" height="50"/>
+                                <rect key="frame" x="100" y="254" width="175" height="50"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="EUG-mw-NYq">
-                                <rect key="frame" x="16" y="344" width="382" height="123"/>
+                                <rect key="frame" x="16" y="344" width="343" height="123"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호, 사용자 이름 또는 이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MqD-kw-D6C">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N27-HF-IOp">
-                                        <rect key="frame" x="0.0" y="53" width="382" height="34"/>
+                                        <rect key="frame" x="0.0" y="53" width="343" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -38,7 +38,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yiu-YB-w7X">
-                                        <rect key="frame" x="0.0" y="106" width="382" height="17"/>
+                                        <rect key="frame" x="0.0" y="106" width="343" height="17"/>
                                         <attributedString key="attributedText">
                                             <fragment content="비밀번호를 잊으셨나요?">
                                                 <attributes>
@@ -53,7 +53,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSk-19-mXd">
-                                <rect key="frame" x="16" y="499" width="382" height="44"/>
+                                <rect key="frame" x="16" y="499" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.41960784313725491" green="0.79607843137254897" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="r4d-pR-9cd"/>
@@ -67,23 +67,17 @@
                                     <action selector="goToWelcomeVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vxq-Mj-7ut"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="toc-hw-VJA">
-                                <rect key="frame" x="121" y="579" width="172.5" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="toc-hw-VJA">
+                                <rect key="frame" x="97.333333333333329" y="579" width="180.66666666666669" height="31"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEE-B4-rhk">
-                                        <rect key="frame" x="0.0" y="0.0" width="107" height="31"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="계정이 없으신가요?">
-                                                <attributes>
-                                                    <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 없으신가요?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEE-B4-rhk">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svL-MU-r0N">
-                                        <rect key="frame" x="100" y="0.0" width="72.5" height="31"/>
+                                        <rect key="frame" x="108" y="0.0" width="72.666666666666686" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
@@ -106,8 +100,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EUG-mw-NYq" firstAttribute="top" secondItem="fcf-OS-aGM" secondAttribute="bottom" constant="40" id="DGx-5F-NMd"/>
-                            <constraint firstItem="toc-hw-VJA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dor-e8-bUk"/>
                             <constraint firstItem="fcf-OS-aGM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="166" id="L24-ld-kbB"/>
+                            <constraint firstItem="toc-hw-VJA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="af0-bg-ob7"/>
                             <constraint firstItem="dSk-19-mXd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="evE-KQ-QBu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dSk-19-mXd" secondAttribute="trailing" constant="16" id="fLV-uh-amW"/>
                             <constraint firstItem="EUG-mw-NYq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gHM-ct-ura"/>
@@ -136,33 +130,177 @@
             <objects>
                 <viewController storyboardIdentifier="MakeNameViewController" id="Rx4-jv-h6k" customClass="MakeNameViewController" customModule="SOPT_week1_assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nrq-BC-4FM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="사용자 이름 만들기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZo-nA-mSF">
-                                <rect key="frame" x="76" y="103" width="263" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용자 이름 만들기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZo-nA-mSF">
+                                <rect key="frame" x="92" y="138" width="191" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KU-nK-2dY">
-                                <rect key="frame" x="48" y="184" width="318" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KU-nK-2dY">
+                                <rect key="frame" x="57" y="182.66666666666666" width="262" height="26.666666666666657"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="새 계정에 사용할 사용자 이름을 선택하세요. 나중에 언제든지 변경할 수 있습니다.">
+                                    <fragment content="새">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="계정에">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="사용할">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="사용자">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="이름을">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="선택하세요">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=". ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="나중에">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="언제든지">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="변경할">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="수">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="있습니다">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=".">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BGW-oT-bha">
-                                <rect key="frame" x="37" y="254" width="340" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BGW-oT-bha">
+                                <rect key="frame" x="16" y="231.33333333333334" width="343" height="34.000000000000028"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -170,10 +308,12 @@
                                     <action selector="textedName:" destination="Rx4-jv-h6k" eventType="editingChanged" id="wDL-jZ-lZY"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BID-eB-Ljm">
-                                <rect key="frame" x="37" y="306" width="340" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BID-eB-Ljm">
+                                <rect key="frame" x="16" y="287.33333333333331" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.51387876070000005" green="0.78834337030000001" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NMn-3i-rTc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="다음">
@@ -186,35 +326,48 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wp3-XI-VoI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BGW-oT-bha" firstAttribute="top" secondItem="3KU-nK-2dY" secondAttribute="bottom" constant="22" id="6uC-r7-SV4"/>
+                            <constraint firstItem="BID-eB-Ljm" firstAttribute="top" secondItem="BGW-oT-bha" secondAttribute="bottom" constant="22" id="DuC-Cc-Z5c"/>
+                            <constraint firstItem="3KU-nK-2dY" firstAttribute="top" secondItem="yZo-nA-mSF" secondAttribute="bottom" constant="16" id="Mda-Dd-2UJ"/>
+                            <constraint firstItem="BGW-oT-bha" firstAttribute="leading" secondItem="Wp3-XI-VoI" secondAttribute="leading" constant="16" id="UDz-4t-KSu"/>
+                            <constraint firstItem="Wp3-XI-VoI" firstAttribute="trailing" secondItem="BGW-oT-bha" secondAttribute="trailing" constant="16" id="btY-I4-SYV"/>
+                            <constraint firstItem="Wp3-XI-VoI" firstAttribute="trailing" secondItem="3KU-nK-2dY" secondAttribute="trailing" constant="56" id="fOK-Id-QwD"/>
+                            <constraint firstItem="yZo-nA-mSF" firstAttribute="top" secondItem="Wp3-XI-VoI" secondAttribute="top" constant="94" id="fbh-ls-lWY"/>
+                            <constraint firstItem="BID-eB-Ljm" firstAttribute="leading" secondItem="Wp3-XI-VoI" secondAttribute="leading" constant="16" id="gJr-jW-w0B"/>
+                            <constraint firstItem="yZo-nA-mSF" firstAttribute="leading" secondItem="Wp3-XI-VoI" secondAttribute="leading" constant="92" id="i82-9f-dEf"/>
+                            <constraint firstItem="Wp3-XI-VoI" firstAttribute="trailing" secondItem="yZo-nA-mSF" secondAttribute="trailing" constant="92" id="sHa-j8-Ryc"/>
+                            <constraint firstItem="Wp3-XI-VoI" firstAttribute="trailing" secondItem="BID-eB-Ljm" secondAttribute="trailing" constant="16" id="sI0-31-fhq"/>
+                            <constraint firstItem="3KU-nK-2dY" firstAttribute="leading" secondItem="Wp3-XI-VoI" secondAttribute="leading" constant="57" id="xcs-kn-sDE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="nameDescriptionLabel" destination="3KU-nK-2dY" id="mnx-t3-RNh"/>
                         <outlet property="nameNextButton" destination="BID-eB-Ljm" id="57n-Nh-YI7"/>
+                        <outlet property="titleLabel" destination="yZo-nA-mSF" id="oVE-av-HIA"/>
                         <outlet property="userNameTextField" destination="BGW-oT-bha" id="qEq-Ii-huM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JTl-kw-VUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692.753623188406" y="93.75"/>
+            <point key="canvasLocation" x="1692" y="93.103448275862078"/>
         </scene>
         <!--Make Pw View Controller-->
         <scene sceneID="Zb4-hk-oEC">
             <objects>
                 <viewController storyboardIdentifier="MakePwViewController" id="4NF-S7-DVi" customClass="MakePwViewController" customModule="SOPT_week1_assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gxf-0f-DU2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="비밀번호 만들기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKa-KD-KqB">
-                                <rect key="frame" x="94" y="95" width="227" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 만들기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKa-KD-KqB">
+                                <rect key="frame" x="106" y="138" width="163" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d7k-hr-Rml">
-                                <rect key="frame" x="37" y="244" width="340" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d7k-hr-Rml">
+                                <rect key="frame" x="16" y="231.33333333333334" width="343" height="34.000000000000028"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -222,10 +375,12 @@
                                     <action selector="textedPw:" destination="4NF-S7-DVi" eventType="editingChanged" id="NHS-5t-MVb"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hn-5u-IrX">
-                                <rect key="frame" x="37" y="293" width="340" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hn-5u-IrX">
+                                <rect key="frame" x="16" y="287.33333333333331" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.51387876070000005" green="0.78834337030000001" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SGw-AA-q0O"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="다음">
@@ -235,14 +390,146 @@
                                     <action selector="goToWelcomeVC:" destination="4NF-S7-DVi" eventType="touchUpInside" id="boX-j1-BDn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDF-h9-ZVw">
-                                <rect key="frame" x="37" y="179" width="340" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDF-h9-ZVw">
+                                <rect key="frame" x="41" y="182.66666666666666" width="292" height="26.666666666666657"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="비밀번호를 저장할 수 있으므로 iCloud 기기에서 로그인 정보를 입력하지 않아도 됩니다.">
+                                    <fragment content="비밀번호를">
                                         <attributes>
-                                            <color key="NSColor" red="0.35174167080000002" green="0.3495294591" blue="0.35395388259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="15"/>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="저장할">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="수">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="있으므로">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" iCloud ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="기기에서">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="로그인">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="정보를">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="입력하지">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="않아도">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="됩니다">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=".">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="12"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -252,6 +539,20 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qNi-cA-CJM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qNi-cA-CJM" firstAttribute="trailing" secondItem="qKa-KD-KqB" secondAttribute="trailing" constant="106" id="93v-sq-sCV"/>
+                            <constraint firstItem="qNi-cA-CJM" firstAttribute="trailing" secondItem="XDF-h9-ZVw" secondAttribute="trailing" constant="42" id="ETL-bf-6cu"/>
+                            <constraint firstItem="qKa-KD-KqB" firstAttribute="top" secondItem="qNi-cA-CJM" secondAttribute="top" constant="94" id="HfU-jP-mKy"/>
+                            <constraint firstItem="8Hn-5u-IrX" firstAttribute="leading" secondItem="qNi-cA-CJM" secondAttribute="leading" constant="16" id="IOX-ZQ-Gdw"/>
+                            <constraint firstAttribute="trailing" secondItem="d7k-hr-Rml" secondAttribute="trailing" constant="16" id="JkI-se-sSR"/>
+                            <constraint firstItem="d7k-hr-Rml" firstAttribute="top" secondItem="XDF-h9-ZVw" secondAttribute="bottom" constant="22" id="OWI-j7-H6N"/>
+                            <constraint firstItem="XDF-h9-ZVw" firstAttribute="leading" secondItem="qNi-cA-CJM" secondAttribute="leading" constant="41" id="OhL-1C-xn5"/>
+                            <constraint firstAttribute="trailing" secondItem="8Hn-5u-IrX" secondAttribute="trailing" constant="16" id="Sh6-iL-q7L"/>
+                            <constraint firstItem="8Hn-5u-IrX" firstAttribute="top" secondItem="d7k-hr-Rml" secondAttribute="bottom" constant="22" id="g1u-5O-85A"/>
+                            <constraint firstItem="XDF-h9-ZVw" firstAttribute="top" secondItem="qKa-KD-KqB" secondAttribute="bottom" constant="16" id="jVH-hm-1ab"/>
+                            <constraint firstItem="d7k-hr-Rml" firstAttribute="leading" secondItem="qNi-cA-CJM" secondAttribute="leading" constant="16" id="kHG-6P-fjY"/>
+                            <constraint firstItem="qKa-KD-KqB" firstAttribute="leading" secondItem="qNi-cA-CJM" secondAttribute="leading" constant="106" id="wr3-tI-Nrd"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="XDF-h9-ZVw" id="ALd-l3-V38"/>
@@ -268,41 +569,60 @@
             <objects>
                 <viewController storyboardIdentifier="WelcomeViewController" id="glb-eC-LaJ" customClass="WelcomeViewController" customModule="SOPT_week1_assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qdX-N9-X0Z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f77-Re-gfZ">
-                                <rect key="frame" x="76" y="253" width="262" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxN-uE-PeD">
-                                <rect key="frame" x="37" y="417" width="340" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Lrj-Wr-cqG">
+                                <rect key="frame" x="34" y="337.33333333333331" width="307" height="137.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f77-Re-gfZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFd-ch-xVc">
+                                        <rect key="frame" x="0.0" y="45" width="307" height="33.666666666666657"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                        <color key="textColor" red="0.35174167080000002" green="0.3495294591" blue="0.35395388259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxN-uE-PeD">
+                                        <rect key="frame" x="0.0" y="93.666666666666686" width="307" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="No0-jI-PbH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="완료하기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goBackMain:" destination="glb-eC-LaJ" eventType="touchUpInside" id="eXG-Sp-Zw6"/>
+                                            <action selector="goToMakePwVC:" destination="Rx4-jv-h6k" eventType="touchUpInside" id="Dlk-8r-Xrj"/>
+                                            <action selector="goToWelcomeVC:" destination="4NF-S7-DVi" eventType="touchUpInside" id="xYq-zp-kIg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9f-u8-ery">
+                                <rect key="frame" x="117" y="493" width="141" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="완료하기">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="goBackMain:" destination="glb-eC-LaJ" eventType="touchUpInside" id="eXG-Sp-Zw6"/>
-                                    <action selector="goToMakePwVC:" destination="Rx4-jv-h6k" eventType="touchUpInside" id="Dlk-8r-Xrj"/>
-                                    <action selector="goToWelcomeVC:" destination="4NF-S7-DVi" eventType="touchUpInside" id="xYq-zp-kIg"/>
-                                </connections>
+                                <state key="normal" title="다른 계정으로 로그인하기"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFd-ch-xVc">
-                                <rect key="frame" x="37" y="376" width="340" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                <color key="textColor" red="0.35174167080000002" green="0.3495294591" blue="0.35395388259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bYJ-KV-949"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bYJ-KV-949" firstAttribute="trailing" secondItem="Lrj-Wr-cqG" secondAttribute="trailing" constant="34" id="Jcm-tO-0D4"/>
+                            <constraint firstItem="J9f-u8-ery" firstAttribute="top" secondItem="Lrj-Wr-cqG" secondAttribute="bottom" constant="18" id="OgU-uh-TMF"/>
+                            <constraint firstItem="J9f-u8-ery" firstAttribute="centerX" secondItem="qdX-N9-X0Z" secondAttribute="centerX" id="RWw-mO-ljr"/>
+                            <constraint firstItem="Lrj-Wr-cqG" firstAttribute="centerX" secondItem="qdX-N9-X0Z" secondAttribute="centerX" id="eiy-L9-ggd"/>
+                            <constraint firstItem="Lrj-Wr-cqG" firstAttribute="leading" secondItem="bYJ-KV-949" secondAttribute="leading" constant="34" id="msw-rX-Kjq"/>
+                            <constraint firstItem="Lrj-Wr-cqG" firstAttribute="centerY" secondItem="qdX-N9-X0Z" secondAttribute="centerY" id="tpF-Ka-zVM"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="welcomeLabel" destination="f77-Re-gfZ" id="ICz-T2-BOi"/>
@@ -318,7 +638,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U0x-XI-Ttb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="BackArrow" backIndicatorTransitionMaskImage="BackArrow" id="VrI-rn-pgp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -332,7 +652,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackArrow" width="24.5" height="24"/>
+        <image name="BackArrow" width="24.333333969116211" height="24"/>
         <image name="Logo" width="175" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
