@@ -35,7 +35,7 @@ class MakeNameViewController: UIViewController {
     }
     
     @IBAction func goToMakePwVC(_ sender: Any) {
-        guard let makePasswordVC = self.storyboard?.instantiateViewController(withIdentifier: "MakePwViewController") as? MakePwViewController else {
+        guard let makePasswordVC = self.storyboard?.instantiateViewController(withIdentifier: Const.ViewController.MakePw) as? MakePwViewController else {
             return
         }
         

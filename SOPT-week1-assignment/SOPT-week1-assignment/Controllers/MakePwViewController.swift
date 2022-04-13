@@ -33,7 +33,7 @@ class MakePwViewController: UIViewController {
     }
     
     @IBAction func goToWelcomeVC(_ sender: UIButton) {
-        guard let WelcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {
+        guard let WelcomeVC = UIStoryboard(name: Const.Storyboard.Welcome, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Welcome) as? WelcomeViewController else {
             return
         }
         

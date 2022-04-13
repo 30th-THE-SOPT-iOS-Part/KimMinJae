@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func goToMakeIdVC(_ sender: UIButton) {
-        guard let MakeNameVC = self.storyboard?.instantiateViewController(withIdentifier: "MakeNameViewController") as? MakeNameViewController else {
+        guard let MakeNameVC = UIStoryboard(name: Const.Storyboard.SignUp, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.MakeName) as? MakeNameViewController else {
             return
         }
         
@@ -47,9 +47,7 @@ class ViewController: UIViewController {
     
     @IBAction func goToWelcomeVC(_ sender: UIButton) {
         
-        guard let WelcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {
-            return
-        }
+        guard let WelcomeVC = UIStoryboard(name: Const.Storyboard.Welcome, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Welcome) as? WelcomeViewController else { return }
         
         WelcomeVC.modalPresentationStyle = .fullScreen
         WelcomeVC.modalTransitionStyle = .crossDissolve
@@ -64,6 +62,6 @@ class ViewController: UIViewController {
     private func initializeButton() {
         loginButton.isEnabled = false
         signInButton.sizeToFit()
-        pwTextField.setIcon(icon: UIImage(named: "ShownEye")!)
+        pwTextField.setIcon(icon: Const.ImageAssets.shownEye)
     }
 }

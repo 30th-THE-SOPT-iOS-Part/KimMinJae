@@ -1,24 +1,14 @@
 //
-//  Extension.swift
+//  UITextField++.swift
 //  SOPT-week1-assignment
 //
-//  Created by 김민재 on 2022/04/12.
+//  Created by 김민재 on 2022/04/14.
 //
 
 import UIKit
 
-
-extension UIViewController {
-    func makeBackButton() {
-        let backImage = UIImage(named: "BackArrow")
-        self.navigationController?.navigationBar.backIndicatorImage = backImage
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
-        self.navigationItem.backButtonTitle = ""
-    }
-}
-
 extension UITextField {
-    func setIcon(icon image: UIImage) {
+    func setIcon(icon image: UIImage?) {
             let iconButton = UIButton(frame: CGRect(x: 0, y: 5, width: 20, height: 20))
             iconButton.setImage(image, for: .normal)
             iconButton.addTarget(self, action: #selector(touchedIcon), for: .touchUpInside)
