@@ -22,7 +22,7 @@ extension Const {
         static let selectedHome = UIImage(named: "icn_home_selected")
         
         static let profile = UIImage(named: "icn_profile")
-        static let profileSelected = UIImage(named: "icn_profile_selected")
+        static let selectedProfile = UIImage(named: "icn_profile_selected")
         
         static let reels = UIImage(named: "icn_reels")
         static let selectedReels = UIImage(named: "icn_reels_selected")

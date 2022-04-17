@@ -32,7 +32,7 @@
 		B5B4E0FF280C80330052AD7F /* ReelsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0FE280C80330052AD7F /* ReelsTabViewController.swift */; };
 		B5B4E101280C803C0052AD7F /* ShopTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E100280C803C0052AD7F /* ShopTabViewController.swift */; };
 		B5B4E103280C805E0052AD7F /* ProfileTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E102280C805E0052AD7F /* ProfileTabViewController.swift */; };
-		B5C96464280C68E50061556F /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C96463280C68E50061556F /* TabBar.storyboard */; };
+		B5C96464280C68E50061556F /* InstaTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C96463280C68E50061556F /* InstaTabBar.storyboard */; };
 		B5C96466280C6ADF0061556F /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C96465280C6ADF0061556F /* HomeTab.storyboard */; };
 		B5C96468280C6AEC0061556F /* SearchTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C96467280C6AEC0061556F /* SearchTab.storyboard */; };
 		B5C9646A280C6AFD0061556F /* ReelsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C96469280C6AFD0061556F /* ReelsTab.storyboard */; };
@@ -69,7 +69,7 @@
 		B5B4E0FE280C80330052AD7F /* ReelsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsTabViewController.swift; sourceTree = "<group>"; };
 		B5B4E100280C803C0052AD7F /* ShopTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTabViewController.swift; sourceTree = "<group>"; };
 		B5B4E102280C805E0052AD7F /* ProfileTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabViewController.swift; sourceTree = "<group>"; };
-		B5C96463280C68E50061556F /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		B5C96463280C68E50061556F /* InstaTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstaTabBar.storyboard; sourceTree = "<group>"; };
 		B5C96465280C6ADF0061556F /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
 		B5C96467280C6AEC0061556F /* SearchTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchTab.storyboard; sourceTree = "<group>"; };
 		B5C96469280C6AFD0061556F /* ReelsTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReelsTab.storyboard; sourceTree = "<group>"; };
@@ -101,7 +101,6 @@
 		B527D19328072B92009F3A4B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B5B4E0F9280C7FE30052AD7F /* TabBar */,
 				B5B4E0F8280C7F9E0052AD7F /* Auth */,
 			);
 			path = Controllers;
@@ -173,19 +172,6 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		B5B4E0F9280C7FE30052AD7F /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				B5B4E0F4280C75DC0052AD7F /* InstaTabBarController.swift */,
-				B5B4E0FA280C80120052AD7F /* HomeTabViewController.swift */,
-				B5B4E0FC280C801D0052AD7F /* SearchTabViewController.swift */,
-				B5B4E0FE280C80330052AD7F /* ReelsTabViewController.swift */,
-				B5B4E100280C803C0052AD7F /* ShopTabViewController.swift */,
-				B5B4E102280C805E0052AD7F /* ProfileTabViewController.swift */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
 		B5C96461280C67B50061556F /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +185,13 @@
 		B5C96462280C67D10061556F /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				B5C96463280C68E50061556F /* TabBar.storyboard */,
+				B5B4E0F4280C75DC0052AD7F /* InstaTabBarController.swift */,
+				B5B4E0FA280C80120052AD7F /* HomeTabViewController.swift */,
+				B5B4E0FC280C801D0052AD7F /* SearchTabViewController.swift */,
+				B5B4E0FE280C80330052AD7F /* ReelsTabViewController.swift */,
+				B5B4E100280C803C0052AD7F /* ShopTabViewController.swift */,
+				B5B4E102280C805E0052AD7F /* ProfileTabViewController.swift */,
+				B5C96463280C68E50061556F /* InstaTabBar.storyboard */,
 				B5C96465280C6ADF0061556F /* HomeTab.storyboard */,
 				B5C96467280C6AEC0061556F /* SearchTab.storyboard */,
 				B5C96469280C6AFD0061556F /* ReelsTab.storyboard */,
@@ -275,7 +267,7 @@
 				B55782F327FAF38E00C20DF0 /* Main.storyboard in Resources */,
 				B527D19928073361009F3A4B /* Login.storyboard in Resources */,
 				B527D19B2807339C009F3A4B /* SignUp.storyboard in Resources */,
-				B5C96464280C68E50061556F /* TabBar.storyboard in Resources */,
+				B5C96464280C68E50061556F /* InstaTabBar.storyboard in Resources */,
 				B527D19D280733B3009F3A4B /* Welcome.storyboard in Resources */,
 				B5C9646C280C6B090061556F /* ShopTab.storyboard in Resources */,
 				B5C96468280C6AEC0061556F /* SearchTab.storyboard in Resources */,

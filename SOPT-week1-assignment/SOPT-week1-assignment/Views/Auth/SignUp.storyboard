@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 만들기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRp-Bj-G78">
-                                <rect key="frame" x="112.33333333333333" y="99" width="150.66666666666669" height="29"/>
+                                <rect key="frame" x="112.33333333333333" y="50" width="150.66666666666669" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TDd-X1-baC">
-                                <rect key="frame" x="16" y="194.66666666666666" width="343" height="44"/>
+                                <rect key="frame" x="16" y="145.66666666666666" width="343" height="44"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Udv-YO-Pu4"/>
@@ -35,7 +35,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqz-h3-BAn">
-                                <rect key="frame" x="16" y="260.66666666666669" width="343" height="44"/>
+                                <rect key="frame" x="16" y="211.66666666666666" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.51387876070000005" green="0.78834337030000001" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="nE1-ml-du6"/>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-yb-mvR">
-                                <rect key="frame" x="41" y="144" width="292" height="28.666666666666657"/>
+                                <rect key="frame" x="41" y="95" width="292" height="28.666666666666671"/>
                                 <attributedString key="attributedText">
                                     <fragment content="비밀번호를">
                                         <attributes>
@@ -200,7 +200,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yqz-h3-BAn" firstAttribute="top" secondItem="TDd-X1-baC" secondAttribute="bottom" constant="22" id="DGJ-6v-T3b"/>
-                            <constraint firstItem="uRp-Bj-G78" firstAttribute="top" secondItem="zNr-2h-jqR" secondAttribute="top" constant="55" id="KxP-Ix-dWj"/>
+                            <constraint firstItem="uRp-Bj-G78" firstAttribute="top" secondItem="zNr-2h-jqR" secondAttribute="top" constant="6" id="KxP-Ix-dWj"/>
                             <constraint firstItem="TDd-X1-baC" firstAttribute="leading" secondItem="zNr-2h-jqR" secondAttribute="leading" constant="16" id="MOM-kH-cvz"/>
                             <constraint firstItem="uRp-Bj-G78" firstAttribute="centerX" secondItem="9iz-YQ-dlp" secondAttribute="centerX" id="O30-qW-Hsa"/>
                             <constraint firstItem="tsf-yb-mvR" firstAttribute="top" secondItem="uRp-Bj-G78" secondAttribute="bottom" constant="16" id="RYt-dq-7M8"/>
@@ -232,13 +232,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용자 이름 만들기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxv-iA-DhM">
-                                <rect key="frame" x="99" y="99" width="177" height="29"/>
+                                <rect key="frame" x="99" y="50" width="177" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqh-yW-hzP">
-                                <rect key="frame" x="57" y="144" width="262" height="28.666666666666657"/>
+                                <rect key="frame" x="57" y="95" width="262" height="28.666666666666671"/>
                                 <attributedString key="attributedText">
                                     <fragment content="새">
                                         <attributes>
@@ -398,7 +398,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-OY-iuP">
-                                <rect key="frame" x="16" y="194.66666666666666" width="343" height="44"/>
+                                <rect key="frame" x="16" y="145.66666666666666" width="343" height="44"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ejL-Vt-PW7"/>
@@ -410,7 +410,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUJ-mN-WqL">
-                                <rect key="frame" x="16" y="260.66666666666669" width="343" height="44"/>
+                                <rect key="frame" x="16" y="211.66666666666666" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.51387876070000005" green="0.78834337030000001" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="2Zt-Qa-c6M"/>
@@ -429,7 +429,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rLq-Gj-z5b" firstAttribute="trailing" secondItem="VUJ-mN-WqL" secondAttribute="trailing" constant="16" id="1MO-3z-B5d"/>
-                            <constraint firstItem="Yxv-iA-DhM" firstAttribute="top" secondItem="rLq-Gj-z5b" secondAttribute="top" constant="55" id="9bI-lx-THm"/>
+                            <constraint firstItem="Yxv-iA-DhM" firstAttribute="top" secondItem="rLq-Gj-z5b" secondAttribute="top" constant="6" id="9bI-lx-THm"/>
                             <constraint firstItem="VUJ-mN-WqL" firstAttribute="top" secondItem="dzj-OY-iuP" secondAttribute="bottom" constant="22" id="LMf-u1-yoH"/>
                             <constraint firstItem="jqh-yW-hzP" firstAttribute="top" secondItem="Yxv-iA-DhM" secondAttribute="bottom" constant="16" id="LkW-H5-IoG"/>
                             <constraint firstItem="rLq-Gj-z5b" firstAttribute="trailing" secondItem="dzj-OY-iuP" secondAttribute="trailing" constant="16" id="NSB-bA-CPv"/>

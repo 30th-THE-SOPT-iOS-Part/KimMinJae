@@ -14,7 +14,7 @@ extension Const {
         static let SignUp = "SignUp"
         static let Welcome = "Welcome"
         
-        static let TabBar = "TabBar"
+        static let TabBar = "InstaTabBar"
         static let HomeTab = "HomeTab"
         static let SearchTab = "SearchTab"
         static let ReelsTab = "ReelsTab"

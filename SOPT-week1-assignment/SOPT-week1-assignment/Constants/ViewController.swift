@@ -16,5 +16,11 @@ extension Const {
         static let MakePw = "MakePwViewController"
         static let Welcome = "WelcomeViewController"
         
+        static let HomeTab = "HomeTabViewController"
+        static let SearchTab = "SearchTabViewController"
+        static let ReelsTab = "ReelsTabViewController"
+        static let ShopTab = "ShopTabViewController"
+        static let ProfileTab = "ProfileTabViewController"
+        
     }
 }
