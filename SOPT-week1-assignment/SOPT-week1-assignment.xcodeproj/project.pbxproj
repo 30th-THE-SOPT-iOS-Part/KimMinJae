@@ -66,9 +66,8 @@
 		B527D19228072B77009F3A4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B527D19828073361009F3A4B /* Login.storyboard */,
-				B527D19A2807339C009F3A4B /* SignUp.storyboard */,
-				B527D19C280733B3009F3A4B /* Welcome.storyboard */,
+				B5C96462280C67D10061556F /* TabBar */,
+				B5C96461280C67B50061556F /* Auth */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +135,23 @@
 				B527D19E2807355E009F3A4B /* MainViewController.swift */,
 			);
 			path = "SOPT-week1-assignment";
+			sourceTree = "<group>";
+		};
+		B5C96461280C67B50061556F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B527D19828073361009F3A4B /* Login.storyboard */,
+				B527D19A2807339C009F3A4B /* SignUp.storyboard */,
+				B527D19C280733B3009F3A4B /* Welcome.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		B5C96462280C67D10061556F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

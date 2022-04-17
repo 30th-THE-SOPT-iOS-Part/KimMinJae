@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TDd-X1-baC">
-                                <rect key="frame" x="16" y="232" width="382" height="34"/>
+                                <rect key="frame" x="16" y="234" width="382" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqz-h3-BAn">
-                                <rect key="frame" x="16" y="288" width="382" height="44"/>
+                                <rect key="frame" x="16" y="290" width="382" height="44"/>
                                 <color key="backgroundColor" red="0.51387876070000005" green="0.78834337030000001" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="nE1-ml-du6"/>
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-yb-mvR">
-                                <rect key="frame" x="41" y="183" width="331" height="27"/>
+                                <rect key="frame" x="41" y="183" width="331" height="29"/>
                                 <attributedString key="attributedText">
                                     <fragment content="비밀번호를">
                                         <attributes>
@@ -59,7 +59,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -73,7 +73,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -87,7 +87,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -101,7 +101,7 @@
                                     <fragment content=" iCloud ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -115,7 +115,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -129,7 +129,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -143,7 +143,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -157,7 +157,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -171,7 +171,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -185,7 +185,7 @@
                                     <fragment content=".">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -235,7 +235,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqh-yW-hzP">
-                                <rect key="frame" x="57" y="183" width="301" height="27"/>
+                                <rect key="frame" x="57" y="183" width="301" height="29"/>
                                 <attributedString key="attributedText">
                                     <fragment content="새">
                                         <attributes>
@@ -247,7 +247,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -261,7 +261,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -275,7 +275,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -289,7 +289,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -303,7 +303,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -317,7 +317,7 @@
                                     <fragment content=". ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -331,7 +331,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -345,7 +345,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -359,7 +359,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -373,7 +373,7 @@
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -387,7 +387,7 @@
                                     <fragment content=".">
                                         <attributes>
                                             <color key="NSColor" red="0.35174167082481778" green="0.34952945905862393" blue="0.35395388259101157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="12"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -395,7 +395,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-OY-iuP">
-                                <rect key="frame" x="16" y="232" width="382" height="34"/>
+                                <rect key="frame" x="16" y="234" width="382" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -404,7 +404,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUJ-mN-WqL">
-                                <rect key="frame" x="16" y="288" width="382" height="44"/>
+                                <rect key="frame" x="16" y="290" width="382" height="44"/>
                                 <color key="backgroundColor" red="0.51387876070000005" green="0.78834337030000001" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="2Zt-Qa-c6M"/>
