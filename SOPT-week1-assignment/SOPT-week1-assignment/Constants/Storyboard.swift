@@ -13,6 +13,13 @@ extension Const {
         static let Login = "Login"
         static let SignUp = "SignUp"
         static let Welcome = "Welcome"
+        
+        static let TabBar = "TabBar"
+        static let HomeTab = "HomeTab"
+        static let SearchTab = "SearchTab"
+        static let ReelsTab = "ReelsTab"
+        static let ShopTab = "ShopTab"
+        static let ProfileTab = "ProfileTab"
     }
     
 }

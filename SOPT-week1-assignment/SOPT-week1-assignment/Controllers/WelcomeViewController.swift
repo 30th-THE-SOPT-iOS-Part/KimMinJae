@@ -18,10 +18,9 @@ class WelcomeViewController: UIViewController {
         setName()
     }
     
-    @IBAction func goBackMain(_ sender: Any) {
+    @IBAction func loginWithAnotherID(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
-    
     private func setName() {
         if let userName = userName {
             welcomeLabel.text = userName + "님, Instagram에 오신 것을 환영합니다"
@@ -30,4 +29,16 @@ class WelcomeViewController: UIViewController {
     }
     
 
+    @IBAction func moveToMainScreen(_ sender: UIButton) {
+        
+        guard let mainScreen = UIStoryboard(name: Const.Storyboard.TabBar, bundle: nil).instantiateViewController(withIdentifier: Const.TabBarController.TabBar) as? InstaTabBarController else {
+            return
+        }
+        
+        mainScreen.modalPresentationStyle = .fullScreen
+        mainScreen.modalTransitionStyle = .crossDissolve
+        
+        self.present(mainScreen, animated: true, completion: nil)
+        
+    }
 }
