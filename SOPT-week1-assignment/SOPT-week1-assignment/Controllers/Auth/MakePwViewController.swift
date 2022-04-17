@@ -9,6 +9,7 @@ import UIKit
 
 class MakePwViewController: UIViewController {
     
+    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var pwNextButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -55,8 +56,10 @@ class MakePwViewController: UIViewController {
     }
     
     private func setDescriptionLabel() {
+        titleLabel.text = "비밀번호 만들기"
         descriptionLabel.text = "비밀번호를 저장할 수 있으므로 iCloud 기기에서 로그인 정보를 입력하지 않아도 됩니다."
         descriptionLabel.sizeToFit()
+        titleLabel.sizeToFit()
     }
     
 
