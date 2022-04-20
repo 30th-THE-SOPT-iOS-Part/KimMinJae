@@ -13,6 +13,7 @@ class InstaTabBarController: UITabBarController {
         super.viewDidLoad()
         setTBCItemColor()
         setTabBarController()
+        self.delegate = self
     }
     
     private func setTBCItemColor() {
@@ -63,4 +64,19 @@ class InstaTabBarController: UITabBarController {
     }
     
 
+}
+
+
+extension InstaTabBarController: UITabBarControllerDelegate {
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if item.image == Const.ImageAssets.reels {
+            tabBar.unselectedItemTintColor = .white
+            tabBar.tintColor = .white
+            tabBar.backgroundColor = .black
+        } else {
+            tabBar.unselectedItemTintColor = .black
+            tabBar.tintColor = .black
+            tabBar.backgroundColor = .white
+        }
+    }
 }
