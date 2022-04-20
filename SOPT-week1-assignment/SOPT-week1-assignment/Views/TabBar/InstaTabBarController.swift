@@ -13,6 +13,10 @@ class InstaTabBarController: UITabBarController {
         super.viewDidLoad()
         setTBCItemColor()
         setTabBarController()
+        setDelegate()
+    }
+    
+    func setDelegate() {
         self.delegate = self
     }
     
