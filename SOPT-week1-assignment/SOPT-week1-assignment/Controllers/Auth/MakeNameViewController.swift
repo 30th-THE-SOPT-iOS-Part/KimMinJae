@@ -9,6 +9,7 @@ import UIKit
 
 class MakeNameViewController: UIViewController {
 
+    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var nameDescriptionLabel: UILabel!
     @IBOutlet weak var nameNextButton: UIButton!
@@ -22,6 +23,7 @@ class MakeNameViewController: UIViewController {
     
 
     @IBAction func textedName(_ sender: Any) {
+        
         if userNameTextField.hasText {
             nameNextButton.isEnabled = true
             nameNextButton.backgroundColor = .systemBlue
@@ -33,7 +35,7 @@ class MakeNameViewController: UIViewController {
     }
     
     @IBAction func goToMakePwVC(_ sender: Any) {
-        guard let makePasswordVC = self.storyboard?.instantiateViewController(withIdentifier: "MakePwViewController") as? MakePwViewController else {
+        guard let makePasswordVC = self.storyboard?.instantiateViewController(withIdentifier: Const.ViewController.MakePw) as? MakePwViewController else {
             return
         }
         
@@ -43,8 +45,10 @@ class MakeNameViewController: UIViewController {
     }
     
     private func setDescriptionLabel() {
+        titleLabel.text = "사용자 이름 만들기"
         nameDescriptionLabel.text = "새 계정에 사용할 사용자 이름을 선택하세요. 나중에 언제든지 변경할 수 있습니다."
         nameDescriptionLabel.sizeToFit()
+        titleLabel.sizeToFit()
     }
     
     private func setBtn() {

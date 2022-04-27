@@ -9,17 +9,17 @@ import UIKit
 
 class MakePwViewController: UIViewController {
     
+    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var pwNextButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var pwVCEyeButton: UIButton!
     
     var userNameInPwVC: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setDescriptionLabel()
-        pwNextButton.isEnabled = false
+        initializeUI()
     }
     
     
@@ -34,7 +34,7 @@ class MakePwViewController: UIViewController {
     }
     
     @IBAction func goToWelcomeVC(_ sender: UIButton) {
-        guard let WelcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {
+        guard let WelcomeVC = UIStoryboard(name: Const.Storyboard.Welcome, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Welcome) as? WelcomeViewController else {
             return
         }
         
@@ -49,18 +49,17 @@ class MakePwViewController: UIViewController {
         }
     }
     
-    @IBAction func toggleEyeBtn(_ sender: UIButton) {
-        if pwTextField.isSecureTextEntry {
-            pwVCEyeButton.setImage(UIImage(named: "ShownEye"), for: .normal)
-        } else {
-            pwVCEyeButton.setImage(UIImage(named: "HiddenEye"), for: .normal)
-        }
-        pwTextField.isSecureTextEntry.toggle()
+    private func initializeUI() {
+        pwNextButton.isEnabled = false
+        pwTextField.setIcon(icon: UIImage(named: "ShownEye")!)
+        
     }
     
     private func setDescriptionLabel() {
+        titleLabel.text = "비밀번호 만들기"
         descriptionLabel.text = "비밀번호를 저장할 수 있으므로 iCloud 기기에서 로그인 정보를 입력하지 않아도 됩니다."
         descriptionLabel.sizeToFit()
+        titleLabel.sizeToFit()
     }
     
 
