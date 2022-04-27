@@ -38,7 +38,10 @@ class WelcomeViewController: UIViewController {
         mainScreen.modalPresentationStyle = .fullScreen
         mainScreen.modalTransitionStyle = .crossDissolve
         
-        self.present(mainScreen, animated: true, completion: nil)
+        self.present(mainScreen, animated: true) {
+            self.view.window?.rootViewController = mainScreen
+            self.view.window?.makeKeyAndVisible()
+        }
         
     }
 }
