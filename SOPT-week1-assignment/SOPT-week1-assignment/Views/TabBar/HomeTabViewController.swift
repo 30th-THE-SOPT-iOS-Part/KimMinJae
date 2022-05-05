@@ -25,26 +25,29 @@ class HomeTabViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 500
     }
 }
 
 
 extension HomeTabViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let width = UIScreen.main.bounds.width
-        
-        var cellHeight: CGFloat
-        switch indexPath.section {
-        case 0:
-            cellHeight = width * (80/375)
-        case 1:
-            cellHeight = width * (488/375)
-        default:
-            cellHeight = 0
-        }
-        return cellHeight
-        
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        let width = UIScreen.main.bounds.width
+//
+//        var cellHeight: CGFloat
+//        switch indexPath.section {
+//        case 0:
+//            cellHeight = width * (80/375)
+//        case 1:
+//            cellHeight = width * (488/375)
+//        default:
+//            cellHeight = 0
+//        }
+//        return cellHeight
+//
+//    }
 }
 
 extension HomeTabViewController: UITableViewDataSource {
@@ -79,6 +82,7 @@ extension HomeTabViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             
+            cell.delegate = self
             cell.setFeedData(dataModel: .sampleData[indexPath.row])
             
             return cell
@@ -88,6 +92,11 @@ extension HomeTabViewController: UITableViewDataSource {
         }
         
     }
-    
-    
+}
+
+extension HomeTabViewController: FeedTableViewCellDelegate {
+    func likeDislikeFeed(_ cell: FeedTableViewCell, likeStatus: Bool) {
+        cell.likeButton.isSelected.toggle()
+        
+    }
 }

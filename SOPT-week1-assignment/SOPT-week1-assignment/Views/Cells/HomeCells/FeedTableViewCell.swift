@@ -7,10 +7,16 @@
 
 import UIKit
 
+protocol FeedTableViewCellDelegate: AnyObject {
+    func likeDislikeFeed(_ cell: FeedTableViewCell, likeStatus: Bool)
+}
+
+
 class FeedTableViewCell: UITableViewCell {
     
     static let identifier = "FeedTableViewCell"
 
+    weak var delegate: FeedTableViewCellDelegate?
     
     @IBOutlet weak var moreCommentsButton: UILabel!
     @IBOutlet weak var feedContent: UILabel!
@@ -37,6 +43,11 @@ class FeedTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
+    
+    @IBAction func heartBtnDidTap(_ sender: UIButton) {
+        delegate?.likeDislikeFeed(self, likeStatus: true)
+    }
+    
     
     func setFeedData(dataModel: InstaFeedDataModel) {
         profileImageView.image = dataModel.profileImage
