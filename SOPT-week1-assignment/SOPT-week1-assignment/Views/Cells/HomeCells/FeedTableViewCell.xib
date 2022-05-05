@@ -26,8 +26,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ts-LK-MdY">
-                        <rect key="frame" x="12" y="445.5" width="31" height="14.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ts-LK-MdY">
+                        <rect key="frame" x="12" y="445.5" width="351" height="14.5"/>
                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -116,25 +116,17 @@
                             </button>
                         </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKX-yg-DXF">
-                        <rect key="frame" x="47" y="447" width="27" height="12"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="yq9-FT-KEb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="15z-i6-4s9"/>
                     <constraint firstItem="S7X-pC-EsH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="17S-4h-Ixu"/>
                     <constraint firstItem="4Ts-LK-MdY" firstAttribute="top" secondItem="iN1-2z-UqL" secondAttribute="bottom" constant="6" id="4gC-79-W3v"/>
-                    <constraint firstItem="SKX-yg-DXF" firstAttribute="leading" secondItem="4Ts-LK-MdY" secondAttribute="trailing" constant="4" id="8GC-ap-LNa"/>
                     <constraint firstItem="wTa-mi-sFW" firstAttribute="top" secondItem="yq9-FT-KEb" secondAttribute="bottom" constant="8" id="9CM-8o-Nc0"/>
                     <constraint firstItem="oxo-k0-wgv" firstAttribute="top" secondItem="4Ts-LK-MdY" secondAttribute="bottom" constant="4" id="CSE-Da-Syn"/>
                     <constraint firstAttribute="trailing" secondItem="MXm-ju-zgc" secondAttribute="trailing" constant="10" id="DmN-jz-xzv"/>
                     <constraint firstItem="iN1-2z-UqL" firstAttribute="top" secondItem="wTa-mi-sFW" secondAttribute="bottom" constant="10" id="IyX-jg-7Ur"/>
                     <constraint firstItem="MXm-ju-zgc" firstAttribute="top" secondItem="yq9-FT-KEb" secondAttribute="bottom" constant="8" id="XJZ-M1-N08"/>
                     <constraint firstItem="MXm-ju-zgc" firstAttribute="centerY" secondItem="wTa-mi-sFW" secondAttribute="centerY" id="aH9-gV-Een"/>
-                    <constraint firstItem="SKX-yg-DXF" firstAttribute="centerY" secondItem="4Ts-LK-MdY" secondAttribute="centerY" id="fAu-Uq-fWi"/>
                     <constraint firstItem="4Ts-LK-MdY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="h4f-yN-j12"/>
                     <constraint firstItem="S7X-pC-EsH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mv4-fi-Ecc"/>
                     <constraint firstItem="wTa-mi-sFW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="n4U-ke-OIg"/>
@@ -144,6 +136,7 @@
                     <constraint firstAttribute="trailing" secondItem="yq9-FT-KEb" secondAttribute="trailing" id="tAn-SU-rpA"/>
                     <constraint firstAttribute="trailing" secondItem="S7X-pC-EsH" secondAttribute="trailing" id="uMA-63-eUG"/>
                     <constraint firstItem="oxo-k0-wgv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="xlP-uv-TdF"/>
+                    <constraint firstAttribute="trailing" secondItem="4Ts-LK-MdY" secondAttribute="trailing" constant="12" id="y3I-XU-ShD"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -151,13 +144,12 @@
                 <outlet property="commentButton" destination="MMC-SB-VvJ" id="F7V-cc-CEZ"/>
                 <outlet property="detailMenuButton" destination="KJZ-wb-y7P" id="fq7-Sr-he5"/>
                 <outlet property="favoriteButton" destination="MXm-ju-zgc" id="f9X-lp-X6e"/>
-                <outlet property="feedContent" destination="SKX-yg-DXF" id="MuK-fy-Lai"/>
                 <outlet property="feedImageView" destination="yq9-FT-KEb" id="NAI-91-Ydi"/>
                 <outlet property="likeButton" destination="CfW-Dx-rGB" id="M84-ZB-XYd"/>
                 <outlet property="likeCntLabel" destination="iN1-2z-UqL" id="iBC-YP-CN6"/>
                 <outlet property="moreCommentsButton" destination="oxo-k0-wgv" id="3dM-6w-UNM"/>
                 <outlet property="profileImageView" destination="YI5-CN-UHb" id="r0M-qO-CUu"/>
-                <outlet property="profileNameInContentLabel" destination="4Ts-LK-MdY" id="fxG-Lj-hSw"/>
+                <outlet property="profileNameAndContentLabel" destination="4Ts-LK-MdY" id="pok-B0-WGD"/>
                 <outlet property="profileNameLabel" destination="krG-R6-Jy5" id="pGb-uX-eP7"/>
                 <outlet property="shareButton" destination="kbg-Q9-sTf" id="lBa-aN-OeM"/>
             </connections>

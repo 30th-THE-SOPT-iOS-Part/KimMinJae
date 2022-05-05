@@ -82,8 +82,9 @@ extension HomeTabViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             
+            cell.feedModel = InstaFeedDataModel.sampleData[indexPath.row]
             cell.delegate = self
-            cell.setFeedData(dataModel: .sampleData[indexPath.row])
+//            cell.setFeedData(dataModel: .sampleData[indexPath.row])
             
             return cell
         default:
@@ -97,6 +98,11 @@ extension HomeTabViewController: UITableViewDataSource {
 extension HomeTabViewController: FeedTableViewCellDelegate {
     func likeDislikeFeed(_ cell: FeedTableViewCell, likeStatus: Bool) {
         cell.likeButton.isSelected.toggle()
+        if likeStatus == true {
+            cell.feedModel?.likeCnt += 1
+        } else {
+            cell.feedModel?.likeCnt -= 1
+        }
         
     }
 }

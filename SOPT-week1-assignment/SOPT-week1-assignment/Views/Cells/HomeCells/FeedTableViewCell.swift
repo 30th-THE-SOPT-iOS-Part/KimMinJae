@@ -18,8 +18,18 @@ class FeedTableViewCell: UITableViewCell {
 
     weak var delegate: FeedTableViewCellDelegate?
     
+    var feedModel: InstaFeedDataModel? {
+        didSet {
+            guard let model = feedModel else {
+                return
+            }
+            setFeedData(dataModel: model)
+        }
+    }
+    
+    
     @IBOutlet weak var moreCommentsButton: UILabel!
-    @IBOutlet weak var feedContent: UILabel!
+//    @IBOutlet weak var feedContent: UILabel!
     
     @IBOutlet weak var likeCntLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
@@ -31,7 +41,7 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var feedImageView: UIImageView!
     @IBOutlet weak var profileNameLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var profileNameInContentLabel: UILabel!
+    @IBOutlet weak var profileNameAndContentLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -45,7 +55,7 @@ class FeedTableViewCell: UITableViewCell {
     }
     
     @IBAction func heartBtnDidTap(_ sender: UIButton) {
-        delegate?.likeDislikeFeed(self, likeStatus: true)
+        delegate?.likeDislikeFeed(self, likeStatus: !sender.isSelected)
     }
     
     
@@ -53,11 +63,30 @@ class FeedTableViewCell: UITableViewCell {
         profileImageView.image = dataModel.profileImage
         profileNameLabel.text = dataModel.profileName
         feedImageView.image = dataModel.feedImage
-        profileNameInContentLabel.text = dataModel.profileName
+        profileNameAndContentLabel.text = attributeString(profileName: dataModel.profileName, feedContent: dataModel.feedContent).string
         
         likeCntLabel.text = "좋아요 \(dataModel.likeCnt)개"
-        feedContent.text = dataModel.feedContent
+//        feedContent.text = dataModel.feedContent
         moreCommentsButton.text = "댓글 \(dataModel.commentCnt)개 모두 보기"
     }
     
+    func attributeString(profileName: String, feedContent: String) -> NSAttributedString {
+        
+        let profileNameFont = UIFont.systemFont(ofSize: 12, weight: .medium)
+        let profileNameAttr: [NSMutableAttributedString.Key: Any] = [
+            .font: profileNameFont,
+        ]
+        
+        let contentFont = UIFont.systemFont(ofSize: 10, weight: .medium)
+        let contentFontAttr: [NSMutableAttributedString.Key: Any] = [
+            .font: contentFont,
+        ]
+        let profileNameAttributedString = NSMutableAttributedString(string: "\(profileName) ", attributes: profileNameAttr)
+        
+        let contentAttributedString = NSMutableAttributedString(string: "\(feedContent) ", attributes: contentFontAttr)
+        
+        profileNameAttributedString.append(contentAttributedString)
+        
+        return profileNameAttributedString
+    }
 }

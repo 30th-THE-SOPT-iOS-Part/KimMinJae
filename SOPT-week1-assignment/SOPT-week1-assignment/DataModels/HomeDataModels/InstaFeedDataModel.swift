@@ -13,7 +13,7 @@ struct InstaFeedDataModel {
         return UIImage(named: profileName)
     }
     let feedImage: UIImage?
-    let likeCnt: Int
+    var likeCnt: Int
     let feedContent: String
     let commentCnt: Int
 }
