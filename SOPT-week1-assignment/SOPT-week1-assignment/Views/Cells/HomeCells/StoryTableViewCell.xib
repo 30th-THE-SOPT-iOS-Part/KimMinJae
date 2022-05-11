@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="490" height="186"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ib1-Mx-Qt7">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ib1-Mx-Qt7">
                         <rect key="frame" x="0.0" y="0.0" width="490" height="80"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>

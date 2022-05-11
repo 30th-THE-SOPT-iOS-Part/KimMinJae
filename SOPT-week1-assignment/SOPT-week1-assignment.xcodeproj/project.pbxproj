@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FD1F930D5BB4C297168CDB2 /* Pods_SOPT_week1_assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8D9F5337E93DF4A2032E3F /* Pods_SOPT_week1_assignment.framework */; };
 		B527D19728072E5C009F3A4B /* UITextField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527D19628072E5C009F3A4B /* UITextField++.swift */; };
 		B527D19928073361009F3A4B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B527D19828073361009F3A4B /* Login.storyboard */; };
 		B527D19B2807339C009F3A4B /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B527D19A2807339C009F3A4B /* SignUp.storyboard */; };
@@ -32,6 +33,11 @@
 		B557830027FAFB0800C20DF0 /* MakeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55782FF27FAFB0800C20DF0 /* MakeNameViewController.swift */; };
 		B557830227FAFBCA00C20DF0 /* MakePwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557830127FAFBCA00C20DF0 /* MakePwViewController.swift */; };
 		B557830427FAFBD600C20DF0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557830327FAFBD600C20DF0 /* WelcomeViewController.swift */; };
+		B59B729B282BA7A8003FF813 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B729A282BA7A8003FF813 /* APIConstants.swift */; };
+		B59B729D282BA7B4003FF813 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B729C282BA7B3003FF813 /* NetworkResult.swift */; };
+		B59B729F282BA7F1003FF813 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B729E282BA7F1003FF813 /* LoginModel.swift */; };
+		B59B72A1282BA8FD003FF813 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B72A0282BA8FD003FF813 /* SignUpModel.swift */; };
+		B59B72A4282BA9FF003FF813 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B72A3282BA9FF003FF813 /* UserService.swift */; };
 		B5B4E0F5280C75DC0052AD7F /* InstaTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0F4280C75DC0052AD7F /* InstaTabBarController.swift */; };
 		B5B4E0F7280C76250052AD7F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0F6280C76250052AD7F /* TabBarController.swift */; };
 		B5B4E0FB280C80120052AD7F /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0FA280C80120052AD7F /* HomeTabViewController.swift */; };
@@ -54,6 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B8D9F5337E93DF4A2032E3F /* Pods_SOPT_week1_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_week1_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B527D19628072E5C009F3A4B /* UITextField++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField++.swift"; sourceTree = "<group>"; };
 		B527D19828073361009F3A4B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B527D19A2807339C009F3A4B /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
@@ -81,6 +88,11 @@
 		B55782FF27FAFB0800C20DF0 /* MakeNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNameViewController.swift; sourceTree = "<group>"; };
 		B557830127FAFBCA00C20DF0 /* MakePwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePwViewController.swift; sourceTree = "<group>"; };
 		B557830327FAFBD600C20DF0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B59B729A282BA7A8003FF813 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		B59B729C282BA7B3003FF813 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		B59B729E282BA7F1003FF813 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		B59B72A0282BA8FD003FF813 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		B59B72A3282BA9FF003FF813 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		B5B4E0F4280C75DC0052AD7F /* InstaTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaTabBarController.swift; sourceTree = "<group>"; };
 		B5B4E0F6280C76250052AD7F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B5B4E0FA280C80120052AD7F /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +112,8 @@
 		B5DD6EC528205AB7009BC9C8 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		B5DD6EC82820673D009BC9C8 /* InstaFeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFeedDataModel.swift; sourceTree = "<group>"; };
 		B5EF3C0928058BFA0099F84B /* UIViewController++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController++.swift"; sourceTree = "<group>"; };
+		CEF9269E487185DF08F37725 /* Pods-SOPT-week1-assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-week1-assignment.release.xcconfig"; path = "Target Support Files/Pods-SOPT-week1-assignment/Pods-SOPT-week1-assignment.release.xcconfig"; sourceTree = "<group>"; };
+		FE6AD3FA42F7D711539F86ED /* Pods-SOPT-week1-assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-week1-assignment.debug.xcconfig"; path = "Target Support Files/Pods-SOPT-week1-assignment/Pods-SOPT-week1-assignment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +121,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD1F930D5BB4C297168CDB2 /* Pods_SOPT_week1_assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6439BBED929F1E7879E3065C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE6AD3FA42F7D711539F86ED /* Pods-SOPT-week1-assignment.debug.xcconfig */,
+				CEF9269E487185DF08F37725 /* Pods-SOPT-week1-assignment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B527D19228072B77009F3A4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				B54E23252819BD0E00445F66 /* HomeDataModels */,
+				B59B729E282BA7F1003FF813 /* LoginModel.swift */,
+				B59B72A0282BA8FD003FF813 /* SignUpModel.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -195,6 +221,8 @@
 			children = (
 				B55782EA27FAF38E00C20DF0 /* SOPT-week1-assignment */,
 				B55782E927FAF38E00C20DF0 /* Products */,
+				6439BBED929F1E7879E3065C /* Pods */,
+				BEAF3F2C3C64264611552C3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +237,8 @@
 		B55782EA27FAF38E00C20DF0 /* SOPT-week1-assignment */ = {
 			isa = PBXGroup;
 			children = (
+				B59B72A2282BA9F4003FF813 /* Service */,
+				B59B7299282BA78C003FF813 /* Networks */,
 				B54E23242819BD0300445F66 /* DataModels */,
 				B527D19528072BF4009F3A4B /* Extensions */,
 				B527D19428072BA0009F3A4B /* Constants */,
@@ -223,6 +253,23 @@
 				B527D19E2807355E009F3A4B /* MainViewController.swift */,
 			);
 			path = "SOPT-week1-assignment";
+			sourceTree = "<group>";
+		};
+		B59B7299282BA78C003FF813 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				B59B729A282BA7A8003FF813 /* APIConstants.swift */,
+				B59B729C282BA7B3003FF813 /* NetworkResult.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		B59B72A2282BA9F4003FF813 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B59B72A3282BA9FF003FF813 /* UserService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		B5B4E0F8280C7F9E0052AD7F /* Auth */ = {
@@ -269,6 +316,14 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		BEAF3F2C3C64264611552C3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B8D9F5337E93DF4A2032E3F /* Pods_SOPT_week1_assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B55782FC27FAF39000C20DF0 /* Build configuration list for PBXNativeTarget "SOPT-week1-assignment" */;
 			buildPhases = (
+				844C03961C5015202CAFA33B /* [CP] Check Pods Manifest.lock */,
 				B55782E427FAF38E00C20DF0 /* Sources */,
 				B55782E527FAF38E00C20DF0 /* Frameworks */,
 				B55782E627FAF38E00C20DF0 /* Resources */,
+				61384D3F0025F7D8A0C3478A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,6 +406,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61384D3F0025F7D8A0C3478A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPT-week1-assignment/Pods-SOPT-week1-assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPT-week1-assignment/Pods-SOPT-week1-assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOPT-week1-assignment/Pods-SOPT-week1-assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		844C03961C5015202CAFA33B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SOPT-week1-assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B55782E427FAF38E00C20DF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -362,10 +461,12 @@
 				B5DD6EC628205AB7009BC9C8 /* FeedTableViewCell.swift in Sources */,
 				B54E23172819AF6E00445F66 /* ActivityViewController.swift in Sources */,
 				B557830027FAFB0800C20DF0 /* MakeNameViewController.swift in Sources */,
+				B59B729B282BA7A8003FF813 /* APIConstants.swift in Sources */,
 				B5B4E0F7280C76250052AD7F /* TabBarController.swift in Sources */,
 				B54E23272819BD2E00445F66 /* InstaStoryDataModel.swift in Sources */,
 				B5EF3C0A28058BFA0099F84B /* UIViewController++.swift in Sources */,
 				B5B4E0FB280C80120052AD7F /* HomeTabViewController.swift in Sources */,
+				B59B72A1282BA8FD003FF813 /* SignUpModel.swift in Sources */,
 				B5B4E103280C805E0052AD7F /* ProfileTabViewController.swift in Sources */,
 				B527D1A728073870009F3A4B /* ImageAssets.swift in Sources */,
 				B54E231B2819AF8D00445F66 /* TextViewController.swift in Sources */,
@@ -374,10 +475,13 @@
 				B5B4E101280C803C0052AD7F /* ShopTabViewController.swift in Sources */,
 				B527D1A5280737B6009F3A4B /* ViewController.swift in Sources */,
 				B557830427FAFBD600C20DF0 /* WelcomeViewController.swift in Sources */,
+				B59B729D282BA7B4003FF813 /* NetworkResult.swift in Sources */,
 				B527D19F2807355E009F3A4B /* MainViewController.swift in Sources */,
 				B55782EE27FAF38E00C20DF0 /* SceneDelegate.swift in Sources */,
 				B5B4E0F5280C75DC0052AD7F /* InstaTabBarController.swift in Sources */,
+				B59B729F282BA7F1003FF813 /* LoginModel.swift in Sources */,
 				B557830227FAFBCA00C20DF0 /* MakePwViewController.swift in Sources */,
+				B59B72A4282BA9FF003FF813 /* UserService.swift in Sources */,
 				B5DD6EC92820673D009BC9C8 /* InstaFeedDataModel.swift in Sources */,
 				B527D1A12807370E009F3A4B /* Const.swift in Sources */,
 				B54E23212819BC5F00445F66 /* InstaStoryCollectionViewCell.swift in Sources */,
@@ -522,6 +626,7 @@
 		};
 		B55782FD27FAF39000C20DF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6AD3FA42F7D711539F86ED /* Pods-SOPT-week1-assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -550,6 +655,7 @@
 		};
 		B55782FE27FAF39000C20DF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF9269E487185DF08F37725 /* Pods-SOPT-week1-assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
