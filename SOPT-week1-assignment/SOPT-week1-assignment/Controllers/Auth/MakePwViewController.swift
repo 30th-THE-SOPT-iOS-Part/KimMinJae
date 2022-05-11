@@ -42,6 +42,7 @@ class MakePwViewController: UIViewController {
         WelcomeVC.modalTransitionStyle = .crossDissolve
         
         WelcomeVC.userName = userNameInPwVC
+        WelcomeVC.password = pwTextField.text
         
         // Modal - Present method
         self.present(WelcomeVC, animated: true) {
