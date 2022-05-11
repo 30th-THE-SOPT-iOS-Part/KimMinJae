@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="186" id="KGk-i7-Jjw" customClass="StoryTableViewCell" customModule="SOPT_week1_assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="186"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="490" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ib1-Mx-Qt7">
+                        <rect key="frame" x="0.0" y="0.0" width="490" height="80"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="1Xw-ya-a7s"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d26-4F-pMH">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfI-wo-K91">
+                        <rect key="frame" x="0.0" y="83" width="490" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Gcw-Wo-tA8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dfI-wo-K91" firstAttribute="top" secondItem="ib1-Mx-Qt7" secondAttribute="bottom" constant="3" id="IBT-cl-2ZM"/>
+                    <constraint firstItem="dfI-wo-K91" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PMZ-KN-JH2"/>
+                    <constraint firstAttribute="trailing" secondItem="ib1-Mx-Qt7" secondAttribute="trailing" id="Zyf-EN-4QQ"/>
+                    <constraint firstAttribute="trailing" secondItem="dfI-wo-K91" secondAttribute="trailing" id="ciB-gF-gzm"/>
+                    <constraint firstItem="ib1-Mx-Qt7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dHn-Pp-0Ec"/>
+                    <constraint firstAttribute="bottom" secondItem="dfI-wo-K91" secondAttribute="bottom" id="fcq-Jh-K7Q"/>
+                    <constraint firstItem="ib1-Mx-Qt7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fso-r7-hkc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="storyCollectionView" destination="ib1-Mx-Qt7" id="DI2-UW-HrU"/>
+            </connections>
+            <point key="canvasLocation" x="278.26086956521743" y="60.267857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
