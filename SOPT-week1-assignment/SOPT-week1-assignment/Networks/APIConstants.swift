@@ -12,6 +12,7 @@ import Foundation
  
  - 주소를 모아놓은 구조체
  - 이름은 형식상 API를 모아 놓았다는 느낌으로 APIConstants라고 지음
+ 
  */
 
 struct APIConstants {
