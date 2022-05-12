@@ -63,10 +63,12 @@ extension WelcomeViewController {
                             self.dismiss(animated: true)
                         }
                     }
-                case .pathErr:
-                    self.alert(title: "회원가입 실패", message: nil, handler: {_ in})
+                case .requestErr(let data):
+                    guard let data = data as? SignUpResoponse else { return }
+                    self.alert(title: "회원가입 실패", message: data.message) { _ in
+                        self.dismiss(animated: true)
+                    }
                 default:
-                    print(response)
                     return
                 }
         }

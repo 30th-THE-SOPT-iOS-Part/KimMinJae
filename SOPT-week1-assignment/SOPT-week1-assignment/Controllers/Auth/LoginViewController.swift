@@ -94,8 +94,9 @@ extension ViewController {
                         }
                     }
                 }
-            case .pathErr:
-                self.alert(title: "로그인 실패", message: nil, handler: {_ in})
+            case .requestErr(let data):
+                guard let data = data as? LoginResponse else { return }
+                self.alert(title: "로그인 실패", message: data.message, okAction: nil)
             default:
                 return
             }
