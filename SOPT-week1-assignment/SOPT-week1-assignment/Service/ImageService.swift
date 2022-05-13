@@ -39,7 +39,7 @@ class ImageService {
                     guard let value = response.value else { return }
 
                     // 해당 응답을 가지고 case 분기처리를 합니다. (200, 400, 500인지 - 200: 성공을 해서 데이터를 잘 받았는지 확인합니다.)
-                    let networkResult = self.judgeStatus(by: statusCode, value, ImageResponse.self)
+                    let networkResult = self.judgeStatus(by: statusCode, value, [ImageData].self)
                     completion(networkResult)
                 
                 // 실패 시에는 바로 networkFail(통신 실패)라는 신호를 알립니다.

@@ -7,7 +7,12 @@
 
 import Foundation
 
-typealias ImageResponse = [ImageData]
+//typealias ImageResponse = [ImageData]
+
+struct ImageResponse: Codable {
+    let objectArray: [ImageData]
+}
+
 
 struct ImageData: Codable {
     let id: String

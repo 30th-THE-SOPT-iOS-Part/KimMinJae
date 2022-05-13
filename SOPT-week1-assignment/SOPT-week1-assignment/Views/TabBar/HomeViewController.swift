@@ -111,7 +111,7 @@ extension HomeViewController {
         ImageService.shared.getImageList() { response in
             switch response {
             case .success(let data):
-                guard let data = data as? ImageResponse else {return}
+                guard let data = data as? [ImageData] else {return}
                 
                 for i in 0..<InstaFeedDataModel.sampleData.count {
                     self.feedDataList[i].feedImage = data[i].download_url
