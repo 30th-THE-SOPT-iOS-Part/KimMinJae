@@ -57,6 +57,8 @@
 		B5DD6EC728205AB7009BC9C8 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DD6EC528205AB7009BC9C8 /* FeedTableViewCell.xib */; };
 		B5DD6EC92820673D009BC9C8 /* InstaFeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD6EC82820673D009BC9C8 /* InstaFeedDataModel.swift */; };
 		B5E60311282D7575007FDDD5 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E60310282D7575007FDDD5 /* ImageModel.swift */; };
+		B5E60313282D7A94007FDDD5 /* UIImageView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E60312282D7A94007FDDD5 /* UIImageView++.swift */; };
+		B5E60315282D7CAD007FDDD5 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E60314282D7CAD007FDDD5 /* ImageService.swift */; };
 		B5EF3C0A28058BFA0099F84B /* UIViewController++.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF3C0928058BFA0099F84B /* UIViewController++.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +115,8 @@
 		B5DD6EC528205AB7009BC9C8 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		B5DD6EC82820673D009BC9C8 /* InstaFeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFeedDataModel.swift; sourceTree = "<group>"; };
 		B5E60310282D7575007FDDD5 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		B5E60312282D7A94007FDDD5 /* UIImageView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView++.swift"; sourceTree = "<group>"; };
+		B5E60314282D7CAD007FDDD5 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		B5EF3C0928058BFA0099F84B /* UIViewController++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController++.swift"; sourceTree = "<group>"; };
 		CEF9269E487185DF08F37725 /* Pods-SOPT-week1-assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-week1-assignment.release.xcconfig"; path = "Target Support Files/Pods-SOPT-week1-assignment/Pods-SOPT-week1-assignment.release.xcconfig"; sourceTree = "<group>"; };
 		FE6AD3FA42F7D711539F86ED /* Pods-SOPT-week1-assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-week1-assignment.debug.xcconfig"; path = "Target Support Files/Pods-SOPT-week1-assignment/Pods-SOPT-week1-assignment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			children = (
 				B5EF3C0928058BFA0099F84B /* UIViewController++.swift */,
 				B527D19628072E5C009F3A4B /* UITextField++.swift */,
+				B5E60312282D7A94007FDDD5 /* UIImageView++.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				B59B72A3282BA9FF003FF813 /* UserService.swift */,
+				B5E60314282D7CAD007FDDD5 /* ImageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -469,6 +475,7 @@
 				B54E23272819BD2E00445F66 /* InstaStoryDataModel.swift in Sources */,
 				B5EF3C0A28058BFA0099F84B /* UIViewController++.swift in Sources */,
 				B5B4E0FB280C80120052AD7F /* HomeTabViewController.swift in Sources */,
+				B5E60315282D7CAD007FDDD5 /* ImageService.swift in Sources */,
 				B59B72A1282BA8FD003FF813 /* SignUpModel.swift in Sources */,
 				B5B4E103280C805E0052AD7F /* ProfileTabViewController.swift in Sources */,
 				B527D1A728073870009F3A4B /* ImageAssets.swift in Sources */,
@@ -488,6 +495,7 @@
 				B59B72A4282BA9FF003FF813 /* UserService.swift in Sources */,
 				B5DD6EC92820673D009BC9C8 /* InstaFeedDataModel.swift in Sources */,
 				B527D1A12807370E009F3A4B /* Const.swift in Sources */,
+				B5E60313282D7A94007FDDD5 /* UIImageView++.swift in Sources */,
 				B54E23212819BC5F00445F66 /* InstaStoryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

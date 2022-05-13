@@ -13,6 +13,7 @@ class HomeTabViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getImageList()
         setTableView()
     }
     
@@ -84,7 +85,6 @@ extension HomeTabViewController: UITableViewDataSource {
             
             cell.feedModel = InstaFeedDataModel.sampleData[indexPath.row]
             cell.delegate = self
-//            cell.setFeedData(dataModel: .sampleData[indexPath.row])
             
             return cell
         default:
@@ -105,4 +105,25 @@ extension HomeTabViewController: FeedTableViewCellDelegate {
         }
         
     }
+}
+
+
+extension HomeTabViewController {
+    func getImageList() {
+        ImageService.shared.getImageList() { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? ImageResponse else {return}
+                for i in 0...InstaFeedDataModel.sampleData.count-1 {
+                    InstaFeedDataModel.sampleData[i].feedImage = data.imageList[i].url
+                }
+                self.tableView.reloadData()
+            default:
+                print("HomeVC Response : \(response)")
+                return
+            }
+        }
+        
+    }
+    
 }

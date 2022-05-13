@@ -100,7 +100,7 @@ class UserService {
     
     
     
-    // 상태 코드와 값(value, data)를 가지고 통신의 결과를 핸들링하는 함수입니다.
+    // 상태 코드와 값(value, data, response)를 가지고 통신의 결과를 핸들링하는 함수입니다.
     private func judgeStatus<T: Codable>(by statusCode: Int, _ data: Data, _ response: T.Type) -> NetworkResult<Any> {
         
         let decoder = JSONDecoder()

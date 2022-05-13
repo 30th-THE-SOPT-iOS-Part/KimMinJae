@@ -62,7 +62,7 @@ class FeedTableViewCell: UITableViewCell {
     func setFeedData(dataModel: InstaFeedDataModel) {
         profileImageView.image = dataModel.profileImage
         profileNameLabel.text = dataModel.profileName
-        feedImageView.image = dataModel.feedImage
+        feedImageView.load(urlString: dataModel.feedImage)
         profileNameAndContentLabel.text = attributeString(profileName: dataModel.profileName, feedContent: dataModel.feedContent).string
         
         likeCntLabel.text = "좋아요 \(dataModel.likeCnt)개"
