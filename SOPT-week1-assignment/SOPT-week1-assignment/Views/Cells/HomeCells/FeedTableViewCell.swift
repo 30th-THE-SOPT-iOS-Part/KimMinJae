@@ -18,16 +18,6 @@ class FeedTableViewCell: UITableViewCell {
 
     weak var delegate: FeedTableViewCellDelegate?
     
-    var feedModel: InstaFeedDataModel? {
-        didSet {
-            guard let model = feedModel else {
-                return
-            }
-            setFeedData(dataModel: model)
-        }
-    }
-    
-    
     @IBOutlet weak var moreCommentsButton: UILabel!
 //    @IBOutlet weak var feedContent: UILabel!
     
@@ -60,14 +50,16 @@ class FeedTableViewCell: UITableViewCell {
     
     
     func setFeedData(dataModel: InstaFeedDataModel) {
+        
         profileImageView.image = dataModel.profileImage
         profileNameLabel.text = dataModel.profileName
-        feedImageView.load(urlString: dataModel.feedImage)
+        feedImageView.load(urlString: dataModel.feedImage, newWidth: UIScreen.main.bounds.width)
         profileNameAndContentLabel.text = attributeString(profileName: dataModel.profileName, feedContent: dataModel.feedContent).string
         
         likeCntLabel.text = "좋아요 \(dataModel.likeCnt)개"
 //        feedContent.text = dataModel.feedContent
         moreCommentsButton.text = "댓글 \(dataModel.commentCnt)개 모두 보기"
+        
     }
     
     func attributeString(profileName: String, feedContent: String) -> NSAttributedString {

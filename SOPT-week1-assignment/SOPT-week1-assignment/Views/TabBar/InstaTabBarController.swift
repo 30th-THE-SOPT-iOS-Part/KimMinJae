@@ -25,11 +25,11 @@ class InstaTabBarController: UITabBarController {
     }
     
     func setTabBarController() {
-        guard let homeVC = UIStoryboard(name: Const.Storyboard.HomeTab, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.HomeTab) as? HomeTabViewController,
-              let searchVC = UIStoryboard(name: Const.Storyboard.SearchTab, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.SearchTab) as? SearchTabViewController,
-              let reelsVC = UIStoryboard(name: Const.Storyboard.ReelsTab, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.ReelsTab) as? ReelsTabViewController,
-              let shopVC = UIStoryboard(name: Const.Storyboard.ShopTab, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.ShopTab) as? ShopTabViewController,
-              let profileVC = UIStoryboard(name: Const.Storyboard.ProfileTab, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.ProfileTab) as? ProfileTabViewController
+        guard let homeVC = UIStoryboard(name: Const.Storyboard.HomeTab, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.HomeTab) as? HomeViewController,
+              let searchVC = UIStoryboard(name: Const.Storyboard.SearchTab, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.SearchTab) as? SearchViewController,
+              let reelsVC = UIStoryboard(name: Const.Storyboard.ReelsTab, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.ReelsTab) as? ReelsViewController,
+              let shopVC = UIStoryboard(name: Const.Storyboard.ShopTab, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.ShopTab) as? ShopViewController,
+              let profileVC = UIStoryboard(name: Const.Storyboard.ProfileTab, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.ProfileTab) as? ProfileViewController
         else { return }
         
         

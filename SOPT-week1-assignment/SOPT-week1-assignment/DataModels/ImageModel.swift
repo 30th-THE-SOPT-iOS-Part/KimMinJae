@@ -7,9 +7,7 @@
 
 import Foundation
 
-struct ImageResponse: Codable {
-    let imageList: [ImageData]
-}
+typealias ImageResponse = [ImageData]
 
 struct ImageData: Codable {
     let id: String

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7FD1F930D5BB4C297168CDB2 /* Pods_SOPT_week1_assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8D9F5337E93DF4A2032E3F /* Pods_SOPT_week1_assignment.framework */; };
+		B5059913282EAE3400DEDF33 /* UIImage++.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5059912282EAE3400DEDF33 /* UIImage++.swift */; };
 		B527D19728072E5C009F3A4B /* UITextField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527D19628072E5C009F3A4B /* UITextField++.swift */; };
 		B527D19928073361009F3A4B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B527D19828073361009F3A4B /* Login.storyboard */; };
 		B527D19B2807339C009F3A4B /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B527D19A2807339C009F3A4B /* SignUp.storyboard */; };
@@ -40,11 +41,11 @@
 		B59B72A4282BA9FF003FF813 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B72A3282BA9FF003FF813 /* UserService.swift */; };
 		B5B4E0F5280C75DC0052AD7F /* InstaTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0F4280C75DC0052AD7F /* InstaTabBarController.swift */; };
 		B5B4E0F7280C76250052AD7F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0F6280C76250052AD7F /* TabBarController.swift */; };
-		B5B4E0FB280C80120052AD7F /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0FA280C80120052AD7F /* HomeTabViewController.swift */; };
-		B5B4E0FD280C801D0052AD7F /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0FC280C801D0052AD7F /* SearchTabViewController.swift */; };
-		B5B4E0FF280C80330052AD7F /* ReelsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0FE280C80330052AD7F /* ReelsTabViewController.swift */; };
-		B5B4E101280C803C0052AD7F /* ShopTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E100280C803C0052AD7F /* ShopTabViewController.swift */; };
-		B5B4E103280C805E0052AD7F /* ProfileTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E102280C805E0052AD7F /* ProfileTabViewController.swift */; };
+		B5B4E0FB280C80120052AD7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0FA280C80120052AD7F /* HomeViewController.swift */; };
+		B5B4E0FD280C801D0052AD7F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0FC280C801D0052AD7F /* SearchViewController.swift */; };
+		B5B4E0FF280C80330052AD7F /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E0FE280C80330052AD7F /* ReelsViewController.swift */; };
+		B5B4E101280C803C0052AD7F /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E100280C803C0052AD7F /* ShopViewController.swift */; };
+		B5B4E103280C805E0052AD7F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E102280C805E0052AD7F /* ProfileViewController.swift */; };
 		B5C96464280C68E50061556F /* InstaTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C96463280C68E50061556F /* InstaTabBar.storyboard */; };
 		B5C96466280C6ADF0061556F /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C96465280C6ADF0061556F /* HomeTab.storyboard */; };
 		B5C96468280C6AEC0061556F /* SearchTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C96467280C6AEC0061556F /* SearchTab.storyboard */; };
@@ -64,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		6B8D9F5337E93DF4A2032E3F /* Pods_SOPT_week1_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_week1_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5059912282EAE3400DEDF33 /* UIImage++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage++.swift"; sourceTree = "<group>"; };
 		B527D19628072E5C009F3A4B /* UITextField++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField++.swift"; sourceTree = "<group>"; };
 		B527D19828073361009F3A4B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B527D19A2807339C009F3A4B /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
@@ -98,11 +100,11 @@
 		B59B72A3282BA9FF003FF813 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		B5B4E0F4280C75DC0052AD7F /* InstaTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaTabBarController.swift; sourceTree = "<group>"; };
 		B5B4E0F6280C76250052AD7F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		B5B4E0FA280C80120052AD7F /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
-		B5B4E0FC280C801D0052AD7F /* SearchTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
-		B5B4E0FE280C80330052AD7F /* ReelsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsTabViewController.swift; sourceTree = "<group>"; };
-		B5B4E100280C803C0052AD7F /* ShopTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTabViewController.swift; sourceTree = "<group>"; };
-		B5B4E102280C805E0052AD7F /* ProfileTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabViewController.swift; sourceTree = "<group>"; };
+		B5B4E0FA280C80120052AD7F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B5B4E0FC280C801D0052AD7F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B5B4E0FE280C80330052AD7F /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		B5B4E100280C803C0052AD7F /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		B5B4E102280C805E0052AD7F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B5C96463280C68E50061556F /* InstaTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstaTabBar.storyboard; sourceTree = "<group>"; };
 		B5C96465280C6ADF0061556F /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
 		B5C96467280C6AEC0061556F /* SearchTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchTab.storyboard; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				B5EF3C0928058BFA0099F84B /* UIViewController++.swift */,
 				B527D19628072E5C009F3A4B /* UITextField++.swift */,
 				B5E60312282D7A94007FDDD5 /* UIImageView++.swift */,
+				B5059912282EAE3400DEDF33 /* UIImage++.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -306,11 +309,11 @@
 			isa = PBXGroup;
 			children = (
 				B5B4E0F4280C75DC0052AD7F /* InstaTabBarController.swift */,
-				B5B4E0FA280C80120052AD7F /* HomeTabViewController.swift */,
-				B5B4E0FC280C801D0052AD7F /* SearchTabViewController.swift */,
-				B5B4E0FE280C80330052AD7F /* ReelsTabViewController.swift */,
-				B5B4E100280C803C0052AD7F /* ShopTabViewController.swift */,
-				B5B4E102280C805E0052AD7F /* ProfileTabViewController.swift */,
+				B5B4E0FA280C80120052AD7F /* HomeViewController.swift */,
+				B5B4E0FC280C801D0052AD7F /* SearchViewController.swift */,
+				B5B4E0FE280C80330052AD7F /* ReelsViewController.swift */,
+				B5B4E100280C803C0052AD7F /* ShopViewController.swift */,
+				B5B4E102280C805E0052AD7F /* ProfileViewController.swift */,
 				B5C96463280C68E50061556F /* InstaTabBar.storyboard */,
 				B5C96465280C6ADF0061556F /* HomeTab.storyboard */,
 				B5C96467280C6AEC0061556F /* SearchTab.storyboard */,
@@ -462,10 +465,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B4E0FF280C80330052AD7F /* ReelsTabViewController.swift in Sources */,
+				B5B4E0FF280C80330052AD7F /* ReelsViewController.swift in Sources */,
 				B55782F027FAF38E00C20DF0 /* LoginViewController.swift in Sources */,
 				B527D1A328073737009F3A4B /* Storyboard.swift in Sources */,
-				B5B4E0FD280C801D0052AD7F /* SearchTabViewController.swift in Sources */,
+				B5B4E0FD280C801D0052AD7F /* SearchViewController.swift in Sources */,
 				B5DD6EC228204862009BC9C8 /* StoryTableViewCell.swift in Sources */,
 				B5DD6EC628205AB7009BC9C8 /* FeedTableViewCell.swift in Sources */,
 				B54E23172819AF6E00445F66 /* ActivityViewController.swift in Sources */,
@@ -474,19 +477,20 @@
 				B5B4E0F7280C76250052AD7F /* TabBarController.swift in Sources */,
 				B54E23272819BD2E00445F66 /* InstaStoryDataModel.swift in Sources */,
 				B5EF3C0A28058BFA0099F84B /* UIViewController++.swift in Sources */,
-				B5B4E0FB280C80120052AD7F /* HomeTabViewController.swift in Sources */,
+				B5B4E0FB280C80120052AD7F /* HomeViewController.swift in Sources */,
 				B5E60315282D7CAD007FDDD5 /* ImageService.swift in Sources */,
 				B59B72A1282BA8FD003FF813 /* SignUpModel.swift in Sources */,
-				B5B4E103280C805E0052AD7F /* ProfileTabViewController.swift in Sources */,
+				B5B4E103280C805E0052AD7F /* ProfileViewController.swift in Sources */,
 				B527D1A728073870009F3A4B /* ImageAssets.swift in Sources */,
 				B54E231B2819AF8D00445F66 /* TextViewController.swift in Sources */,
 				B527D19728072E5C009F3A4B /* UITextField++.swift in Sources */,
 				B55782EC27FAF38E00C20DF0 /* AppDelegate.swift in Sources */,
-				B5B4E101280C803C0052AD7F /* ShopTabViewController.swift in Sources */,
+				B5B4E101280C803C0052AD7F /* ShopViewController.swift in Sources */,
 				B527D1A5280737B6009F3A4B /* ViewController.swift in Sources */,
 				B557830427FAFBD600C20DF0 /* WelcomeViewController.swift in Sources */,
 				B5E60311282D7575007FDDD5 /* ImageModel.swift in Sources */,
 				B59B729D282BA7B4003FF813 /* NetworkResult.swift in Sources */,
+				B5059913282EAE3400DEDF33 /* UIImage++.swift in Sources */,
 				B527D19F2807355E009F3A4B /* MainViewController.swift in Sources */,
 				B55782EE27FAF38E00C20DF0 /* SceneDelegate.swift in Sources */,
 				B5B4E0F5280C75DC0052AD7F /* InstaTabBarController.swift in Sources */,

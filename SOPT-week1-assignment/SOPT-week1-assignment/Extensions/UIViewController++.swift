@@ -16,14 +16,6 @@ extension UIViewController {
         self.navigationItem.backButtonTitle = ""
     }
     
-//    func alert(title: String, message: String?, handler: @escaping (UIAlertAction) -> Void) {
-//        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//        let okAction = UIAlertAction(title: "확인", style: .default, handler: handler)
-//        alertVC.addAction(okAction)
-//        present(alertVC, animated: true)
-//
-//    }
-    
     func alert(title: String, message: String?, okAction: ((UIAlertAction) -> Void)?) {
         let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
         

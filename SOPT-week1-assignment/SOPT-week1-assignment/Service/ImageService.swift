@@ -40,7 +40,6 @@ class ImageService {
 
                     // 해당 응답을 가지고 case 분기처리를 합니다. (200, 400, 500인지 - 200: 성공을 해서 데이터를 잘 받았는지 확인합니다.)
                     let networkResult = self.judgeStatus(by: statusCode, value, ImageResponse.self)
-                    print("ㄴㄴ")
                     completion(networkResult)
                 
                 // 실패 시에는 바로 networkFail(통신 실패)라는 신호를 알립니다.
@@ -56,15 +55,14 @@ class ImageService {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(response.self, from: data)
         else {
-            print("일루 빠짐")
             return .pathErr
         }
         
         switch statusCode {
         // 성공 시에는 넘겨받은 데이터를 decode(해독)하는 함수를 호출합니다.
-        case 200: return .success(decodedData as Any)
-        case 201: return .success(decodedData as Any)
-        case 400..<500: return .requestErr(decodedData as Any)
+        case 200: return .success(decodedData)
+        case 201: return .success(decodedData)
+        case 400..<500: return .requestErr(decodedData)
         case 500: return .serverErr
         default: return .networkFail
         }

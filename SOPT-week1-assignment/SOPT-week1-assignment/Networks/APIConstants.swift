@@ -27,5 +27,5 @@ struct APIConstants {
     static let signUpURL = baseURL + "/auth/signup"
 
     // ImageURL = "https://picsum.photos/v2/list?page=1&limit=4"
-    static let imageURL = "https://picsum.photos/v2/list"
+    static let imageURL = "https://picsum.photos/v2/list?page"
 }

@@ -83,7 +83,7 @@ extension ViewController {
                 if data.status == 200 {
                     
                     self.alert(title: "로그인 성공", message: nil) { _ in
-                        guard let homeVC = UIStoryboard(name: "HomeTab", bundle: nil).instantiateViewController(withIdentifier: "HomeTabViewController") as? HomeTabViewController else { return }
+                        guard let homeVC = UIStoryboard(name: "HomeTab", bundle: nil).instantiateViewController(withIdentifier: "HomeTabViewController") as? HomeViewController else { return }
                         
                         homeVC.modalTransitionStyle = .crossDissolve
                         homeVC.modalPresentationStyle = .fullScreen
