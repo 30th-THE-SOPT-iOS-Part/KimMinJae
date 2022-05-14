@@ -54,7 +54,7 @@ class FeedTableViewCell: UITableViewCell {
         profileImageView.image = dataModel.profileImage
         profileNameLabel.text = dataModel.profileName
         feedImageView.load(urlString: dataModel.feedImage, newWidth: UIScreen.main.bounds.width)
-        profileNameAndContentLabel.text = attributeString(profileName: dataModel.profileName, feedContent: dataModel.feedContent).string
+        profileNameAndContentLabel.attributedText = attributeString(profileName: dataModel.profileName, feedContent: dataModel.feedContent)
         
         likeCntLabel.text = "좋아요 \(dataModel.likeCnt)개"
 //        feedContent.text = dataModel.feedContent
