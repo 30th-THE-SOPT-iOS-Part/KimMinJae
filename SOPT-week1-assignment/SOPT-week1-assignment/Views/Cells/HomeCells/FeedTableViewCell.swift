@@ -57,7 +57,6 @@ class FeedTableViewCell: UITableViewCell {
         profileNameAndContentLabel.attributedText = attributeString(profileName: dataModel.profileName, feedContent: dataModel.feedContent)
         
         likeCntLabel.text = "좋아요 \(dataModel.likeCnt)개"
-//        feedContent.text = dataModel.feedContent
         moreCommentsButton.text = "댓글 \(dataModel.commentCnt)개 모두 보기"
         
     }

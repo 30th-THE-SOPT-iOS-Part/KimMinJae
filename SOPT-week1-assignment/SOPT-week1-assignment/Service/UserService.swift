@@ -24,9 +24,6 @@ class UserService {
             "password": password
         ]
         
-        
-        
-        // 요청서
         // Request 생성
         let dataRequest = AF.request(url,
                                     method: .post,
@@ -116,16 +113,4 @@ class UserService {
         default: return .networkFail
         }
     }
-    
-    // 성공 시 넘겨받은 데이터를 decode하는 함수입니다.
-    // 이 때 우리가 codable을 채택해서 만들어 놓은 구조체 형식의 데이터 모델을 사용합니다.
-//    private func decodeVaildData<T: Codable>(data: Data,_ object: T.Type) -> NetworkResult<Any> {
-//        let decoder = JSONDecoder()
-//        guard let decodedData = try? decoder.decode(object.self, from: data)
-//        else { return .pathErr }
-//
-//        return .success(decodedData as Any)
-//    }
-    
-    
 }

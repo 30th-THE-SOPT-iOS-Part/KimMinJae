@@ -42,14 +42,12 @@ class ImageService {
                     let networkResult = self.judgeStatus(by: statusCode, value, [ImageData].self)
                     completion(networkResult)
                 
-                // 실패 시에는 바로 networkFail(통신 실패)라는 신호를 알립니다.
                 case .failure:
                     completion(.networkFail)
             }
         }
     }
     
-    // 상태 코드와 값(value, data, response)를 가지고 통신의 결과를 핸들링하는 함수입니다.
     private func judgeStatus<T: Codable>(by statusCode: Int, _ data: Data, _ response: T.Type) -> NetworkResult<Any> {
         
         let decoder = JSONDecoder()

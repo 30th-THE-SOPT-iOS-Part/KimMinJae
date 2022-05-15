@@ -40,21 +40,7 @@ class HomeViewController: UIViewController {
 
 
 extension HomeViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        let width = UIScreen.main.bounds.width
-//
-//        var cellHeight: CGFloat
-//        switch indexPath.section {
-//        case 0:
-//            cellHeight = width * (80/375)
-//        case 1:
-//            cellHeight = width * (488/375)
-//        default:
-//            cellHeight = 0
-//        }
-//        return cellHeight
-//
-//    }
+
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -89,8 +75,6 @@ extension HomeViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.setFeedData(dataModel: feedDataList[indexPath.row])
-            
-//            cell.feedModel = InstaFeedDataModel.sampleData[indexPath.row]
             cell.delegate = self
             
             return cell
@@ -105,7 +89,6 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: FeedTableViewCellDelegate {
     func likeDislikeFeed(_ cell: FeedTableViewCell, likeStatus: Bool) {
         cell.likeButton.isSelected.toggle()
-        
     }
 }
 
@@ -122,7 +105,6 @@ extension HomeViewController {
                 }
                 self.tableView.reloadData()
             default:
-                print("HomeVC Response : \(response)")
                 return
             }
         }
