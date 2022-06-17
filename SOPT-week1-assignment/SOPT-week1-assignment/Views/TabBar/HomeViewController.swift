@@ -7,13 +7,20 @@
 
 import UIKit
 
-class HomeTabViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    private var feedDataList = InstaFeedDataModel.sampleData
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        getImageList()
     }
     
     private func setTableView() {
@@ -32,25 +39,11 @@ class HomeTabViewController: UIViewController {
 }
 
 
-extension HomeTabViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        let width = UIScreen.main.bounds.width
-//
-//        var cellHeight: CGFloat
-//        switch indexPath.section {
-//        case 0:
-//            cellHeight = width * (80/375)
-//        case 1:
-//            cellHeight = width * (488/375)
-//        default:
-//            cellHeight = 0
-//        }
-//        return cellHeight
-//
-//    }
+extension HomeViewController: UITableViewDelegate {
+
 }
 
-extension HomeTabViewController: UITableViewDataSource {
+extension HomeViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -81,10 +74,8 @@ extension HomeTabViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as? FeedTableViewCell else {
                 return UITableViewCell()
             }
-            
-            cell.feedModel = InstaFeedDataModel.sampleData[indexPath.row]
+            cell.setFeedData(dataModel: feedDataList[indexPath.row])
             cell.delegate = self
-//            cell.setFeedData(dataModel: .sampleData[indexPath.row])
             
             return cell
         default:
@@ -95,14 +86,29 @@ extension HomeTabViewController: UITableViewDataSource {
     }
 }
 
-extension HomeTabViewController: FeedTableViewCellDelegate {
+extension HomeViewController: FeedTableViewCellDelegate {
     func likeDislikeFeed(_ cell: FeedTableViewCell, likeStatus: Bool) {
         cell.likeButton.isSelected.toggle()
-        if likeStatus == true {
-            cell.feedModel?.likeCnt += 1
-        } else {
-            cell.feedModel?.likeCnt -= 1
+    }
+}
+
+
+extension HomeViewController {
+    func getImageList() {
+        ImageService.shared.getImageList() { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? [ImageData] else {return}
+                
+                for i in 0..<InstaFeedDataModel.sampleData.count {
+                    self.feedDataList[i].feedImage = data[i].download_url
+                }
+                self.tableView.reloadData()
+            default:
+                return
+            }
         }
         
     }
+    
 }

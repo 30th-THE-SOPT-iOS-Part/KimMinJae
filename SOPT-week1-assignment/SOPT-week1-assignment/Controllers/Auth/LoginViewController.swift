@@ -47,14 +47,17 @@ class ViewController: UIViewController {
     
     @IBAction func goToWelcomeVC(_ sender: UIButton) {
         
-        guard let WelcomeVC = UIStoryboard(name: Const.Storyboard.Welcome, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Welcome) as? WelcomeViewController else { return }
+        login()
         
-        WelcomeVC.modalPresentationStyle = .fullScreen
-        WelcomeVC.modalTransitionStyle = .crossDissolve
         
-        WelcomeVC.userName = idTextField.text
-        
-        self.present(WelcomeVC, animated: true, completion: nil)
+//        guard let WelcomeVC = UIStoryboard(name: Const.Storyboard.Welcome, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Welcome) as? WelcomeViewController else { return }
+//
+//        WelcomeVC.modalPresentationStyle = .fullScreen
+//        WelcomeVC.modalTransitionStyle = .crossDissolve
+//
+//        WelcomeVC.userName = idTextField.text
+//
+//        self.present(WelcomeVC, animated: true, completion: nil)
         
     }
     
@@ -63,5 +66,40 @@ class ViewController: UIViewController {
         loginButton.isEnabled = false
         signInButton.sizeToFit()
         pwTextField.setIcon(icon: Const.ImageAssets.shownEye)
+    }
+}
+
+extension ViewController {
+    func login() {
+        guard let name = idTextField.text else { return }
+        let email = name
+        guard let password = pwTextField.text else { return }
+        
+        UserService.shared.login(name: name, email: email, password: password) { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? LoginResponse else { return }
+                
+                if data.status == 200 {
+                    
+                    self.alert(title: "로그인 성공", message: nil) { _ in
+                        guard let homeVC = UIStoryboard(name: "HomeTab", bundle: nil).instantiateViewController(withIdentifier: "HomeTabViewController") as? HomeViewController else { return }
+                        
+                        homeVC.modalTransitionStyle = .crossDissolve
+                        homeVC.modalPresentationStyle = .fullScreen
+                        
+                        self.present(homeVC, animated: true) {
+                            self.view.window?.rootViewController = homeVC
+                            self.view.window?.makeKeyAndVisible()
+                        }
+                    }
+                }
+            case .requestErr(let data):
+                guard let data = data as? LoginResponse else { return }
+                self.alert(title: "로그인 실패", message: data.message, okAction: nil)
+            default:
+                return
+            }
+        }
     }
 }
